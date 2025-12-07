@@ -1,23 +1,49 @@
 @use "@/styles/vars" as vars;
 
+$padding: vars.$padding-main;
+
 .navBar {
   display: flex;
   gap: vars.$padding-large;
 
   width: 100%;
-  padding: vars.$padding-main;
   background-color: var(--bg-dim);
 }
 
+.headingWrap {
+  all: unset;
+  padding: $padding;
+  padding-right: 0;
+  cursor: pointer;
+}
+
 .heading {
+  color: var(--green);
+  font-weight: 950;
   font-variation-settings: 'wdth' 115;
 }
 
 .linkList {
   display: flex;
+  justify-content: stretch;
+}
+
+.linkWrap {
+  all: unset;
+  display: flex;
+  justify-content: stretch;
+  cursor: pointer;
 }
 
 .link {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: $padding;
+
+  &.active {
+    box-shadow: inset 0 -3px 0 0 var(--green);
+  }
 }
 
