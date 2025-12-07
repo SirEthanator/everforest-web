@@ -1,0 +1,71 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noYodaExpression": "error",
+        "noSubstr": "error",
+        "noNegationElse": "warn"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "error",
+        "useJsxKeyInIterable": "error",
+        "noChildrenProp": "error",
+        "noReactPropAssignments": "warn",
+        "noNestedComponentDefinitions": "warn"
+      },
+      "complexity": {
+        "useSimplifiedLogicExpression": "warn"
+      },
+      "a11y": {
+        "useButtonType": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "warn"
+      },
+      "performance": {
+        "noImgElement": "error"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "trailingCommas": "none",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "operatorLinebreak": "after"
+    }
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "src/**/*.mjs",
+      "src/**/*.cjs",
+      "next.config.ts"
+    ]
+  }
+}

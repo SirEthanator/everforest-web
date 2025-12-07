@@ -1,0 +1,23 @@
+@use "@/styles/vars" as vars;
+
+.navBar {
+  display: flex;
+  gap: vars.$padding-large;
+
+  width: 100%;
+  padding: vars.$padding-main;
+  background-color: var(--bg-dim);
+}
+
+.heading {
+  font-variation-settings: 'wdth' 115;
+}
+
+.linkList {
+  display: flex;
+}
+
+.link {
+  
+}
+

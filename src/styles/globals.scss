@@ -1,0 +1,84 @@
+@use "@/styles/vars" as vars;
+
+:root {
+  --fg: #D3C6AA;
+  --red: #E67E80;
+  --orange: #E69875;
+  --yellow: #DBBC7F;
+  --green: #A7C080;
+  --blue: #7FBBB3;
+  --aqua: #83C092;
+  --purple: #D699B6;
+
+  --bg-dim: #1E2326;
+  --bg0: #272E33;
+  --bg1: #2E383C;
+  --bg2: #374145;
+  --bg3: #414B50;
+  --bg4: #495156;
+  --bg5: #4F5B58;
+  --bg-red: #4C3743;
+  --bg-visual: #493B40;
+  --bg-yellow: #45443C;
+  --bg-green: #3C4841;
+  --bg-blue: #384B55;
+
+  --gray0: #7A8478;
+  --gray1: #859289;
+  --gray2: #9DA9A0;
+
+
+  --fgL: #5C6A72;
+  --redL: #F85552;
+  --orangeL: #F57D26;
+  --yellowL: #DFA000;
+  --greenL: #8DA101;
+  --blueL: #3A94C5;
+  --aquaL: #35A77C;
+  --purpleL: #DF69BA;
+
+  --bg-dimL: #F2EFDF;
+  --bg0L: #FFFBEF;
+  --bg1L: #F8F5E4;
+  --bg2L: #F2EFDF;
+  --bg3L: #EDEADA;
+  --bg4L: #E8E5D5;
+  --bg5L: #BEC5B2;
+  --bg-redL: #FFE7DE;
+  --bg-visualL: #F0F2D4;
+  --bg-yellowL: #FEF2D5;
+  --bg-greenL: #F3F5D9;
+  --bg-blueL: #ECF5ED;
+
+  --gray0L: #A6B0A0;
+  --gray1L: #939F91;
+  --gray2L: #829181;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--bg0);
+  color: var(--fg);
+}
+
+p {
+  margin: 0;
+  // font-size: ;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: vars.$fsize-heading;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: vars.$fsize-heading-small;
+}
+
