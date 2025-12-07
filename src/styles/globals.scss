@@ -103,3 +103,18 @@ h4 {
   font-size: vars.$fsize-med;
 }
 
+button {
+  all: unset;
+  font-family: var(--font-body);
+  font-size: vars.$fsize-main;
+
+  background-color: var(--bg-dim);
+  padding: vars.$padding-main;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--bg2);
+  }
+}
+

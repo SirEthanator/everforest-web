@@ -1,8 +1,8 @@
 import s from "./styles/Header.module.scss";
 
 export type HeaderProps = {
-  children: string
-}
+  children: string;
+};
 
 export default function Header({ children }: HeaderProps) {
   return (
@@ -11,5 +11,5 @@ export default function Header({ children }: HeaderProps) {
         <h1 className={s.title}>{children}</h1>
       </div>
     </div>
-  )
+  );
 }

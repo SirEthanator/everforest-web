@@ -1,0 +1,34 @@
+@use "@/styles/vars" as vars;
+
+.palettes {
+  display: flex;
+  flex-direction: column;
+}
+
+.contrastPicker {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-dim);
+}
+
+.contrastPickerContent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: vars.$max-width-main;
+}
+
+.contrastBtn {
+  width: 100%;
+  text-align: center;
+
+  &.active {
+    color: var(--bg-dim);
+    background-color: var(--green);
+  }
+
+  &:not(:last-child) {
+    border-right: vars.$divider-width solid var(--bg2);
+  }
+}
+

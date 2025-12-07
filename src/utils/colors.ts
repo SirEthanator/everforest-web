@@ -10,6 +10,9 @@ export type Palette = {
   soft: Color[];
 };
 
+export const contrastLevels = ["hard", "medium", "soft"] as const;
+export type ContrastLevel = (typeof contrastLevels)[number];
+
 export const dark: Palette = {
   common: [
     { title: "Foreground", hex: "D3C6AA" },

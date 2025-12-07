@@ -8,6 +8,7 @@ $padding: vars.$padding-main;
 
   width: 100%;
   background-color: var(--bg-dim);
+  border-bottom: vars.$divider-width solid var(--bg2);
 }
 
 .headingWrap {
