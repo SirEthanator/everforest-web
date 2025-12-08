@@ -3,6 +3,10 @@
 $padding: vars.$padding-main;
 
 .navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
   display: flex;
   // justify-content: center;
   background-color: var(--bg-dim);
