@@ -32,23 +32,25 @@ export type NavBarProps = {
 export default function NavBar({ activePage }: NavBarProps) {
   return (
     <div className={s.navBar}>
-      <Link className={s.headingWrap} href="/">
-        <h2 className={s.heading}>EVERFOREST</h2>
-      </Link>
+      <div className={s.content}>
+        <Link className={s.headingWrap} href="/">
+          <h2 className={s.heading}>EVERFOREST</h2>
+        </Link>
 
-      <div className={s.linkList}>
-        {pages.map((page) => {
-          const classes = [s.link];
-          if (activePage === page.id) classes.push(s.active);
+        <div className={s.linkList}>
+          {pages.map((page) => {
+            const classes = [s.link];
+            if (activePage === page.id) classes.push(s.active);
 
-          return (
-            <Link key={page.id} href={page.url} className={s.linkWrap}>
-              <div className={classes.join(" ")}>
-                <h4>{page.title}</h4>
-              </div>
-            </Link>
-          );
-        })}
+            return (
+              <Link key={page.id} href={page.url} className={s.linkWrap}>
+                <div className={classes.join(" ")}>
+                  <h4>{page.title}</h4>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

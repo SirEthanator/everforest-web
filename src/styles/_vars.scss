@@ -14,3 +14,12 @@ $fsize-med-large: 28px;
 $fsize-heading-small: 32px;
 $fsize-heading: 46px;
 
+$transition-length: 200ms;
+$animation-length: 350ms;
+$easing-main: ease-out;
+
+@mixin transition-main() {
+  transition: all $transition-length $easing-main;
+  transition-property: background-color, color, border, outline, opacity;
+}
+

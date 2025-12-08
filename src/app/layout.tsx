@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Flex } from "next/font/google";
+import { Inter, Roboto_Flex, Roboto_Mono } from "next/font/google";
 import "@/styles/globals.scss";
 
 const fontHeading = Roboto_Flex({
@@ -23,6 +23,11 @@ const fontHeading = Roboto_Flex({
 
 const fontBody = Inter({
   variable: "--font-body",
+  subsets: ["latin"]
+});
+
+const fontMono = Roboto_Mono({
+  variable: "--font-mono",
   subsets: ["latin"]
 });
 
@@ -53,7 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontHeading.variable} ${fontBody.variable}`}>
+      <body
+        className={`${fontHeading.variable} ${fontBody.variable} ${fontMono.variable}`}
+      >
         {children}
       </body>
     </html>

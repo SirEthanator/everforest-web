@@ -4,17 +4,22 @@ $padding: vars.$padding-main;
 
 .navBar {
   display: flex;
-  gap: vars.$padding-large;
-
-  width: 100%;
+  // justify-content: center;
   background-color: var(--bg-dim);
   border-bottom: vars.$divider-width solid var(--bg2);
+  padding: 0 $padding;
+}
+
+.content {
+  display: flex;
+  gap: vars.$padding-large;
+  width: 100%;
+  // max-width: vars.$max-width-main;
 }
 
 .headingWrap {
   all: unset;
-  padding: $padding;
-  padding-right: 0;
+  padding: $padding 0;
   cursor: pointer;
 }
 
