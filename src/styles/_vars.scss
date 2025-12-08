@@ -15,8 +15,9 @@ $fsize-heading-small: 32px;
 $fsize-heading: 46px;
 
 $transition-length: 200ms;
-$animation-length: 350ms;
+$animation-length: 400ms;
 $easing-main: ease-out;
+$ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
 
 @mixin transition-main() {
   transition: all $transition-length $easing-main;

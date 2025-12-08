@@ -10,7 +10,7 @@
 .contrastPicker {
   position: sticky;
   bottom: 0;
-  z-index: 1;
+  z-index: 10;
 
   display: flex;
   justify-content: center;
@@ -53,11 +53,39 @@
 
   background-color: var(--bg-dim);
   padding: vars.$padding-med;
+}
 
-  & > h2 {
-    width: 100%;
-    max-width: vars.$max-width-main;
-  }
+.headingContent {
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-med;
+
+  width: 100%;
+  max-width: vars.$max-width-main;
+}
+
+.headingDropBtn, .headingDropBtn:hover {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: rotate(0deg);
+
+  transition-duration: vars.$animation-length;
+  transition-timing-function: vars.$ease-out-back;
+  transition-property: transform;
+}
+
+.headingDropBtn.collapsed {
+  transform: rotate(180deg);
+}
+
+.palette, .paletteColors {
+  display: flex;
+  flex-direction: column;
 }
 
 .paletteGroup {
@@ -65,12 +93,12 @@
 
   display: flex;
   flex-direction: column;
-  // gap: vars.$padding-large;
 }
 
-.palette, .paletteColors {
-  display: flex;
-  flex-direction: column;
+.paletteColors {
+  &.collapsed {
+    display: none;
+  }
 }
 
 .palette:not(:last-child) {

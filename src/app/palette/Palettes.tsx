@@ -1,5 +1,6 @@
 "use client";
 
+import { IconChevronUp } from "@tabler/icons-react";
 import { useState } from "react";
 import {
   type Color as ColorType,
@@ -30,14 +31,29 @@ type PaletteProps = {
 };
 
 function Palette({ title, contrast, colors }: PaletteProps) {
+  const [collapsed, setCollapsed] = useState(false);
+  const dropBtnClasses = [s.headingDropBtn];
+  const colorsClasses = [s.paletteColors];
+  if (collapsed) {
+    dropBtnClasses.push(s.collapsed);
+    colorsClasses.push(s.collapsed);
+  }
+
   return (
     <div className={s.palette}>
       <div className={s.heading}>
-        {/* dropdown arrow */}
-        <h2>{title}</h2>
+        <div className={s.headingContent}>
+          <button
+            className={dropBtnClasses.join(" ")}
+            onClick={() => setCollapsed((prev) => !prev)}
+          >
+            <IconChevronUp />
+          </button>
+          <h2>{title}</h2>
+        </div>
       </div>
 
-      <div className={s.paletteColors}>
+      <div className={colorsClasses.join(" ")}>
         {[...colors.common, ...colors[contrast]].map((color) => (
           <Color key={color.title} title={color.title} hex={color.hex} />
         ))}
