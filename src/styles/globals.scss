@@ -116,5 +116,7 @@ button {
   &:hover {
     background-color: var(--bg2);
   }
+
+  @include vars.transition-main;
 }
 

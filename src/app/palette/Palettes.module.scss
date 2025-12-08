@@ -44,7 +44,7 @@
   position: relative;
   display: flex;
 
-  transition: transform vars.$animation-length vars.$easing-main;
+  transition: transform vars.$animation-length vars.$easing-animation;
 }
 
 .heading {
@@ -114,7 +114,7 @@
   background-color: var(--bg0);
 
   &:nth-child(2n) {
-    background-color: var(--bg-dim);
+    background-color: var(--bg1);
   }
 }
 
@@ -133,6 +133,10 @@
 }
 
 .copyBtn {
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-main;
+
   font-family: var(--font-mono);
   margin-left: auto;
 }
