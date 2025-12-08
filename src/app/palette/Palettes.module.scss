@@ -29,6 +29,8 @@
   width: 100%;
   text-align: center;
 
+  font-weight: 600;
+
   &.active {
     color: var(--bg-dim);
     background-color: var(--green);
@@ -52,7 +54,7 @@
   justify-content: center;
 
   background-color: var(--bg-dim);
-  padding: vars.$padding-med;
+  padding: vars.$padding-med vars.$padding-edges;
 }
 
 .headingContent {
@@ -109,7 +111,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: vars.$padding-main;
+  padding: vars.$padding-main vars.$padding-edges;
 
   background-color: var(--bg0);
 

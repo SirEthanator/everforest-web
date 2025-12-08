@@ -11,7 +11,7 @@ $padding: vars.$padding-main;
   // justify-content: center;
   background-color: var(--bg-dim);
   border-bottom: vars.$divider-width solid var(--bg2);
-  padding: 0 $padding;
+  padding: 0 vars.$padding-edges;
 }
 
 .content {

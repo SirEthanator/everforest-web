@@ -9,11 +9,16 @@ $padding: vars.$padding-large;
 
   background: linear-gradient(90deg, var(--bg0) 0%, var(--bg-dim) 60%, var(--bg-dim) 100%);
   border-bottom: vars.$divider-width solid var(--bg2);
-  padding: $padding;
+  padding: $padding vars.$padding-edges;
 }
 
 .content {
   width: 100%;
   max-width: vars.$max-width-main;
+}
+
+.title {
+  font-weight: 1000;
+  font-variation-settings: "wdth" 130, "slnt" -7, "XTRA" 600;
 }
 
