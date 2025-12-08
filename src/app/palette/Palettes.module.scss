@@ -111,7 +111,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: vars.$padding-main vars.$padding-edges;
+  padding: vars.$padding-small vars.$padding-edges;
 
   background-color: var(--bg0);
 
@@ -123,15 +123,16 @@
 .colorContent {
   display: flex;
   align-items: center;
-  gap: vars.$padding-small;
+  gap: vars.$padding-main;
 
   width: 100%;
   max-width: vars.$max-width-main;
 }
 
 .swatch {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 .copyBtn {
