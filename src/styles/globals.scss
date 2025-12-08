@@ -23,36 +23,9 @@
   --bg-green: #3C4841;
   --bg-blue: #384B55;
 
-  --gray0: #7A8478;
-  --gray1: #859289;
-  --gray2: #9DA9A0;
-
-
-  --fgL: #5C6A72;
-  --redL: #F85552;
-  --orangeL: #F57D26;
-  --yellowL: #DFA000;
-  --greenL: #8DA101;
-  --blueL: #3A94C5;
-  --aquaL: #35A77C;
-  --purpleL: #DF69BA;
-
-  --bg-dimL: #F2EFDF;
-  --bg0L: #FFFBEF;
-  --bg1L: #F8F5E4;
-  --bg2L: #F2EFDF;
-  --bg3L: #EDEADA;
-  --bg4L: #E8E5D5;
-  --bg5L: #BEC5B2;
-  --bg-redL: #FFE7DE;
-  --bg-visualL: #F0F2D4;
-  --bg-yellowL: #FEF2D5;
-  --bg-greenL: #F3F5D9;
-  --bg-blueL: #ECF5ED;
-
-  --gray0L: #A6B0A0;
-  --gray1L: #939F91;
-  --gray2L: #829181;
+  --grey0: #7A8478;
+  --grey1: #859289;
+  --grey2: #9DA9A0;
 }
 
 html {
@@ -118,5 +91,13 @@ button {
   }
 
   @include vars.transition-main;
+}
+
+a {
+  color: var(--blue);
+
+  &:visited {
+    color: var(--purple)
+  }
 }
 

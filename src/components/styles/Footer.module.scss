@@ -1,0 +1,16 @@
+@use "@/styles/vars" as vars;
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-dim);
+  padding: vars.$padding-main vars.$padding-edges;
+  border-top: vars.$divider-width solid var(--bg2);
+}
+
+.text {
+  text-align: center;
+}
+

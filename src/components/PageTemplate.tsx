@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import type { NavBarProps } from "./NavBar";
 import NavBar from "./NavBar";
 import s from "./styles/PageTemplate.module.scss";
@@ -14,7 +15,7 @@ export default function PageTemplate({
     <div className={s.page}>
       <NavBar activePage={activePage} />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

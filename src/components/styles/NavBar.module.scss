@@ -43,6 +43,10 @@ $padding: vars.$padding-main;
   display: flex;
   justify-content: stretch;
   cursor: pointer;
+
+  &:visited {
+    color: var(--fg);
+  }
 }
 
 .link {
