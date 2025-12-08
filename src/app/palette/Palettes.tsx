@@ -44,7 +44,7 @@ function Color({ title, hex }: ColorType) {
     <div className={s.color}>
       <div className={s.colorContent}>
         <div className={s.swatch} style={{ backgroundColor: `#${hex}` }} />
-        <p>{title}</p>
+        <p className={s.colorTitle}>{title}</p>
         <button
           className={s.copyBtn}
           style={{ color: copyBtnColor }}

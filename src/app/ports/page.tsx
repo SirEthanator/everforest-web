@@ -1,5 +1,10 @@
+import Header from "@/components/Header";
 import PageTemplate from "@/components/PageTemplate";
 
 export default function Page() {
-  return <PageTemplate activePage="palette"></PageTemplate>;
+  return (
+    <PageTemplate activePage="ports">
+      <Header>Ports</Header>
+    </PageTemplate>
+  );
 }

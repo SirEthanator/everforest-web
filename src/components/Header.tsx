@@ -9,7 +9,7 @@ export default function Header({ children }: HeaderProps) {
     <div className={s.header}>
       <div className={s.headerBg}>
         <div className={s.content}>
-          <h1 className={s.title}>{children}</h1>
+          <h1 className={s.title}>{children.toUpperCase()}</h1>
         </div>
       </div>
     </div>

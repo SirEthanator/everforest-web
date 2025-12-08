@@ -5,7 +5,7 @@ import Palettes from "./Palettes";
 export default function Page() {
   return (
     <PageTemplate activePage="palette">
-      <Header>PALETTE</Header>
+      <Header>Palette</Header>
       <Palettes />
     </PageTemplate>
   );
