@@ -24,16 +24,24 @@ function Color({ title, hex }: ColorType) {
 }
 
 type PaletteProps = {
+  title: string;
   contrast: ContrastLevel;
   colors: PaletteType;
 };
 
-function Palette({ contrast, colors }: PaletteProps) {
+function Palette({ title, contrast, colors }: PaletteProps) {
   return (
     <div className={s.palette}>
-      {[...colors.common, ...colors[contrast]].map((color) => (
-        <Color key={color.title} title={color.title} hex={color.hex} />
-      ))}
+      <div className={s.heading}>
+        {/* dropdown arrow */}
+        <h2>{title}</h2>
+      </div>
+
+      <div className={s.paletteColors}>
+        {[...colors.common, ...colors[contrast]].map((color) => (
+          <Color key={color.title} title={color.title} hex={color.hex} />
+        ))}
+      </div>
     </div>
   );
 }
@@ -43,6 +51,22 @@ export default function Palettes() {
 
   return (
     <div className={s.root}>
+      <div
+        className={s.paletteCarousel}
+        style={{
+          transform: `translateX(${contrastLevels.indexOf(contrast) * -100}%)`
+        }}
+      >
+        {contrastLevels.map((val: ContrastLevel) => {
+          return (
+            <div key={val} className={s.paletteGroup}>
+              <Palette contrast={val} title="Dark" colors={dark} />
+              <Palette contrast={val} title="Light" colors={light} />
+            </div>
+          );
+        })}
+      </div>
+
       <div className={s.contrastPicker}>
         <div className={s.contrastPickerContent}>
           {contrastLevels.map((val: ContrastLevel) => (
@@ -55,22 +79,6 @@ export default function Palettes() {
             </button>
           ))}
         </div>
-      </div>
-
-      <div
-        className={s.paletteCarousel}
-        style={{
-          transform: `translateX(${contrastLevels.indexOf(contrast) * -100}%)`
-        }}
-      >
-        {contrastLevels.map((val: ContrastLevel) => {
-          return (
-            <div key={val} className={s.paletteGroup}>
-              <Palette contrast={val} colors={dark} />
-              <Palette contrast={val} colors={light} />
-            </div>
-          );
-        })}
       </div>
     </div>
   );

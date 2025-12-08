@@ -9,12 +9,13 @@
 
 .contrastPicker {
   position: sticky;
-  top: 0;
+  bottom: 0;
+  z-index: 1;
 
   display: flex;
   justify-content: center;
   background-color: var(--bg-dim);
-  border-bottom: vars.$divider-width solid var(--bg2);
+  border-top: vars.$divider-width solid var(--bg2);
 }
 
 .contrastPickerContent {
@@ -46,17 +47,34 @@
   transition: transform vars.$animation-length vars.$easing-main;
 }
 
+.heading {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--bg-dim);
+  padding: vars.$padding-med;
+
+  & > h2 {
+    width: 100%;
+    max-width: vars.$max-width-main;
+  }
+}
+
 .paletteGroup {
   flex: 0 0 100%;
 
   display: flex;
   flex-direction: column;
-  gap: vars.$padding-large;
+  // gap: vars.$padding-large;
 }
 
-.palette {
+.palette, .paletteColors {
   display: flex;
   flex-direction: column;
+}
+
+.palette:not(:last-child) {
+  border-bottom: vars.$divider-width solid var(--bg2);
 }
 
 .color {
