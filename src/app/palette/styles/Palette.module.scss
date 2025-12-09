@@ -1,0 +1,54 @@
+@use "@/styles/vars" as vars;
+
+.paletteColors {
+  &.collapsed {
+    display: none;
+  }
+}
+
+.palette:not(:last-child) {
+  border-bottom: vars.$divider-width solid var(--bg2);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--bg-dim);
+  padding: vars.$padding-med vars.$padding-edges;
+}
+
+.headingContent {
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-med;
+
+  width: 100%;
+  max-width: vars.$max-width-main;
+}
+
+.headingDropBtn,
+.headingDropBtn:hover {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: rotate(0deg);
+
+  transition-duration: vars.$animation-length;
+  transition-timing-function: vars.$ease-out-back;
+  transition-property: transform;
+}
+
+.headingDropBtn.collapsed {
+  transform: rotate(180deg);
+}
+
+.palette,
+.paletteColors {
+  display: flex;
+  flex-direction: column;
+}

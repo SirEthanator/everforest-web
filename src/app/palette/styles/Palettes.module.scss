@@ -1,0 +1,57 @@
+@use "@/styles/vars" as vars;
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  overflow: clip visible;
+}
+
+.contrastPicker {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-dim);
+  border-top: vars.$divider-width solid var(--bg2);
+}
+
+.contrastPickerContent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: vars.$max-width-main;
+}
+
+.contrastBtn {
+  width: 100%;
+  text-align: center;
+
+  font-weight: 600;
+
+  &.active {
+    color: var(--bg-dim);
+    background-color: var(--green);
+  }
+
+  &:not(:last-child) {
+    border-right: vars.$divider-width solid var(--bg2);
+  }
+}
+
+
+.paletteCarousel {
+  position: relative;
+  display: flex;
+
+  transition: transform vars.$animation-length vars.$easing-animation;
+}
+
+.paletteGroup {
+  flex: 0 0 100%;
+
+  display: flex;
+  flex-direction: column;
+}

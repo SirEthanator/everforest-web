@@ -1,0 +1,42 @@
+@use "@/styles/vars" as vars;
+
+.color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: vars.$padding-small vars.$padding-edges;
+
+  background-color: var(--bg0);
+
+  &:nth-child(2n) {
+    background-color: var(--bg1);
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-main;
+
+  width: 100%;
+  max-width: vars.$max-width-main;
+}
+
+.swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.copyBtn {
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-main;
+
+  font-family: var(--font-mono);
+  margin-left: auto;
+}
