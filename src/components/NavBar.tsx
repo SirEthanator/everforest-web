@@ -27,13 +27,17 @@ export const pages: Array<NavPage> = [
 
 export type NavBarProps = {
   activePage: NavPage["id"];
+  hideHeading?: boolean;
 };
 
-export default function NavBar({ activePage }: NavBarProps) {
+export default function NavBar({ activePage, hideHeading }: NavBarProps) {
   return (
     <div className={s.navBar}>
       <div className={s.content}>
-        <Link className={s.headingWrap} href="/">
+        <Link
+          className={`${s.headingWrap} ${hideHeading ? s.hidden : ""}`}
+          href="/"
+        >
           <h2 className={s.heading}>EVERFOREST</h2>
         </Link>
 

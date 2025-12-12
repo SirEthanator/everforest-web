@@ -1,0 +1,86 @@
+@use "@/styles/vars" as vars;
+
+.root {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--bg-dim);
+  padding: 0 vars.$padding-edges;
+
+  border-top: vars.$divider-width solid var(--bg2);
+}
+
+.content {
+  display: flex;
+  max-width: vars.$max-width-large;
+}
+
+.cardWrapper {
+  flex: 1 1 0;
+
+  border-left: vars.$divider-width solid var(--bg2);
+
+  &:last-child {
+    border-right: vars.$divider-width solid var(--bg2);
+  }
+
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--fg);
+  background-color: var(--bg-dim);
+
+  @include vars.transition-main;
+
+  &:hover {
+    background-color: var(--bg-green);
+
+    & .cardIcon {
+      background-color: var(--bg-dim);
+    }
+  }
+}
+
+.cardIcon {
+  $clip-width: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  align-self: flex-start;
+  font-size: vars.$fsize-heading-small;
+
+  background-color: var(--bg0);
+  padding: vars.$padding-med-small;
+
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - $clip-width), calc(100% - $clip-width) 100%, 0 100%);
+
+  @include vars.transition-main;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: vars.$padding-main;
+
+  padding: vars.$padding-large;
+}
+
+.cardLink {
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-small;
+
+  color: var(--green);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

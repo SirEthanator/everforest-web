@@ -6,12 +6,11 @@ $bg-width: 75%;
 .header {
   display: flex;
   background: linear-gradient(90deg, var(--bg-green) 0%, var(--bg-green) $bg-width - 20%, var(--bg-dim) 100%);
-  // background-color: var(--bg-dim);
   border-bottom: vars.$divider-width solid var(--bg2);
 }
 
 .headerBg {
-  $angle: 70px;
+  $cutoff-width: 70px;
   $width: 75%;
 
   flex-grow: 1;
@@ -20,7 +19,7 @@ $bg-width: 75%;
   justify-content: center;
 
   background-color: var(--green);
-  clip-path: polygon(0 0, $width 0, calc($width - $angle) 100%, 0 100%);
+  clip-path: polygon(0 0, $width 0, calc($width - $cutoff-width) 100%, 0 100%);
 
   padding: $padding vars.$padding-edges;
 }

@@ -1,0 +1,71 @@
+@use "@/styles/vars" as vars;
+@use "sass:math";
+
+.root {
+  position: relative;
+  background-color: var(--bg-dim);
+  border-bottom: vars.$divider-width solid var(--bg2);
+}
+
+$titleBox-width: 60%;
+$colorStrips-width: 100% - $titleBox-width;
+$skew-offset: 80px;
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$padding-large;
+
+  position: relative;
+  width: calc($titleBox-width - vars.$padding-edges);
+
+  padding: vars.$padding-large 0 vars.$padding-large vars.$padding-edges;
+
+  background-color: var(--bg-dim);
+}
+
+.title {
+  font-size: vars.$fsize-heading-large;
+  font-weight: 1000;
+  font-variation-settings: "wdth" 140, "XTRA" 520, "slnt" -8;
+  color: var(--green);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$padding-xsmall;
+}
+
+.colorStrips {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  z-index: 1;
+
+  width: $colorStrips-width;
+
+  overflow: hidden;
+}
+
+.colorStrip {
+  flex: 1;
+
+  // Each div is a rectangle but with part of it clipped off.
+  // This removes the gap between them. Subtracting an extra .1px
+  // just ensures there are no gaps, they will slightly overlap.
+  // This also makes the last strip go off screen preventing some
+  // empty space.
+  margin-right: -$skew-offset - .1px;
+
+  clip-path: polygon(
+    $skew-offset 0,
+    100% 0,
+    calc(100% - $skew-offset) 100%,
+    0 100%
+  );
+}
+

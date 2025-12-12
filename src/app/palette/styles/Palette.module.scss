@@ -41,6 +41,8 @@
   transition-duration: vars.$animation-length;
   transition-timing-function: vars.$ease-out-back;
   transition-property: transform;
+
+  font-size: 24px;
 }
 
 .headingDropBtn.collapsed {

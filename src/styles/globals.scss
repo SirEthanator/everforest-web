@@ -22,6 +22,7 @@
   --bg-yellow: #45443C;
   --bg-green: #3C4841;
   --bg-blue: #384B55;
+  --bg-purple: #463F48;
 
   --grey0: #7A8478;
   --grey1: #859289;
@@ -45,7 +46,7 @@ p {
   font-size: vars.$fsize-main;
 }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -74,6 +75,16 @@ h3 {
 h4 {
   font-weight: 600;
   font-size: vars.$fsize-med;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: vars.$fsize-med-small;
+}
+
+.tabler-icon {
+  width: 1em;
+  height: 1em;
 }
 
 button {
