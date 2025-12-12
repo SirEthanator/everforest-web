@@ -1,7 +1,7 @@
 import PageTemplate from "@/components/PageTemplate";
-import Header from "./Header";
-import ColorStrips from "./ColorStrips";
 import Cards from "./Cards";
+import ColorStrips from "./ColorStrips";
+import Header from "./Header";
 
 export default function Page() {
   return (

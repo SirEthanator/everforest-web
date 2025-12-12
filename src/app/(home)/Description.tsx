@@ -5,5 +5,5 @@ export default function Description() {
     <div className={s.root}>
       <h1>Warm, Comfortable, Pleasant</h1>
     </div>
-  )
+  );
 }

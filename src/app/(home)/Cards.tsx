@@ -1,6 +1,12 @@
-import { IconAppsFilled, IconArrowNarrowRight, IconChristmasTreeFilled, IconExternalLink, IconPaletteFilled } from "@tabler/icons-react";
-import s from "./styles/Cards.module.scss";
+import {
+  IconAppsFilled,
+  IconArrowNarrowRight,
+  IconChristmasTreeFilled,
+  IconExternalLink,
+  IconPaletteFilled
+} from "@tabler/icons-react";
 import Link from "next/link";
+import s from "./styles/Cards.module.scss";
 
 const cards: Array<CardProps> = [
   {
@@ -34,7 +40,7 @@ type CardProps = {
   linkText: string;
   external?: boolean;
   icon: React.ReactNode;
-}
+};
 
 function Card({ title, desc, icon, link, linkText, external }: CardProps) {
   return (
@@ -57,7 +63,7 @@ function Card({ title, desc, icon, link, linkText, external }: CardProps) {
         </div>
       </div>
     </Link>
-  )
+  );
 }
 
 export default function Cards() {
@@ -69,5 +75,5 @@ export default function Cards() {
         ))}
       </div>
     </div>
-  )
+  );
 }

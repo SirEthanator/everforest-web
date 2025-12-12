@@ -55,11 +55,11 @@ $skew-offset: 80px;
   flex: 1;
 
   // Each div is a rectangle but with part of it clipped off.
-  // This removes the gap between them. Subtracting an extra .1px
+  // This removes the gap between them. Subtracting an extra 1px
   // just ensures there are no gaps, they will slightly overlap.
   // This also makes the last strip go off screen preventing some
   // empty space.
-  margin-right: -$skew-offset - .1px;
+  margin-right: -$skew-offset - 1px;
 
   clip-path: polygon(
     $skew-offset 0,

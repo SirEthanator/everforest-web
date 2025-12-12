@@ -1,3 +1,39 @@
+@use "@/styles/vars" as vars;
+
+$skew-offset: 120px;
+
 .root {
+  position: relative;
+  right: $skew-offset;
+
   flex: 1 1 auto;
+
+  display: flex;
+  overflow: hidden;
+
+  width: calc(100% + $skew-offset);
+
+  border-bottom: vars.$divider-width solid var(--bg2);
+
+  min-height: 200px;
+}
+
+.strip {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  // See comment in ./Header.module.scss for info
+  margin-right: -$skew-offset - 1px;
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - $skew-offset) 0,
+    100% 100%,
+    $skew-offset 100%
+  );
+}
+
+.stripInner {
+  flex: 1 0 100%;
 }

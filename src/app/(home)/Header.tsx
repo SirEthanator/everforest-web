@@ -1,7 +1,6 @@
 import s from "./styles/Header.module.scss";
 
 const COLORS = ["red", "yellow", "green", "blue", "purple", "aqua", "orange"];
-const COLOR_WIDTH = `${100 / COLORS.length}%`;
 
 export default function Header() {
   return (
@@ -21,7 +20,7 @@ export default function Header() {
           <div
             key={color}
             className={s.colorStrip}
-            style={{ backgroundColor: `var(--${color})`, width: COLOR_WIDTH }}
+            style={{ backgroundColor: `var(--${color})` }}
           />
         ))}
       </div>
