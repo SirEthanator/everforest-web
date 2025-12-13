@@ -1,6 +1,8 @@
 @use "@/styles/vars" as vars;
 
 .root {
+  flex: 1;
+
   display: flex;
   flex-direction: column;
 
@@ -16,6 +18,8 @@
   justify-content: center;
   background-color: var(--bg-dim);
   border-top: vars.$divider-width solid var(--bg2);
+
+  margin-top: auto;
 }
 
 .contrastPickerContent {

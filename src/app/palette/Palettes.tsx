@@ -12,6 +12,8 @@ import s from "./styles/Palettes.module.scss";
 
 export default function Palettes() {
   const [contrast, setContrast] = useState<ContrastLevel>("hard");
+  const [darkCollapsed, setDarkCollapsed] = useState(false);
+  const [lightCollapsed, setLightCollapsed] = useState(false);
 
   return (
     <div className={s.root}>
@@ -24,8 +26,8 @@ export default function Palettes() {
         {contrastLevels.map((val: ContrastLevel) => {
           return (
             <div key={val} className={s.paletteGroup}>
-              <Palette contrast={val} title="Dark" colors={dark} />
-              <Palette contrast={val} title="Light" colors={light} />
+              <Palette contrast={val} title="Dark" colors={dark} collapsed={darkCollapsed} setCollapsed={setDarkCollapsed} />
+              <Palette contrast={val} title="Light" colors={light} collapsed={lightCollapsed} setCollapsed={setLightCollapsed} />
             </div>
           );
         })}
