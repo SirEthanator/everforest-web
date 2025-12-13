@@ -31,20 +31,23 @@ function Strip({ idx }: StripProps) {
     setActiveStrip((prev) => (prev === 1 ? 0 : 1));
     setIsAnimating(true);
 
-    setTimeout(() => {
+    return setTimeout(() => {
       setIsAnimating(false);
       setCurrentColorIdx((prev) => prev + 1);
     }, SLIDE_LENGTH);
   }, []);
 
   useEffect(() => {
-    rotateStrips();
+    let timeout = rotateStrips();
 
     const interval = setInterval(() => {
-      rotateStrips();
+      timeout = rotateStrips();
     }, SLIDE_DELAY + SLIDE_LENGTH);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
   }, [rotateStrips]);
 
   return (
