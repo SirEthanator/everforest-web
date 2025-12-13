@@ -3,10 +3,9 @@
 $skew-offset: 130px;
 
 .root {
-  position: relative;
-  right: $skew-offset;
+  margin-left: -$skew-offset;
 
-  flex: 1 1 auto;
+  flex: 1;
 
   display: flex;
   overflow: hidden;
