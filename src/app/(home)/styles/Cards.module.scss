@@ -10,11 +10,15 @@
 
 .content {
   display: flex;
+  justify-content: stretch;
   max-width: vars.$max-width-large;
 }
 
 .cardWrapper {
   flex: 1 1 0;
+
+  display: flex;
+  justify-content: stretch;
 
   border-left: vars.$divider-width solid var(--bg2);
 
@@ -62,6 +66,8 @@
 }
 
 .cardText {
+  flex: 1 0 auto;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -80,5 +86,7 @@
   &:hover {
     text-decoration: underline;
   }
+
+  margin-top: auto;
 }
 
