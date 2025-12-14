@@ -17,6 +17,20 @@ export default function Palettes() {
 
   return (
     <div className={s.root}>
+      <div className={s.contrastPicker}>
+        <div className={s.contrastPickerContent}>
+          {contrastLevels.map((val: ContrastLevel) => (
+            <button
+              key={val}
+              className={`${s.contrastBtn} ${val === contrast ? s.active : ""}`}
+              onClick={() => setContrast(val)}
+            >
+              {val.toUpperCase()}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div
         className={s.paletteCarousel}
         style={{
@@ -43,20 +57,6 @@ export default function Palettes() {
             </div>
           );
         })}
-      </div>
-
-      <div className={s.contrastPicker}>
-        <div className={s.contrastPickerContent}>
-          {contrastLevels.map((val: ContrastLevel) => (
-            <button
-              key={val}
-              className={`${s.contrastBtn} ${val === contrast ? s.active : ""}`}
-              onClick={() => setContrast(val)}
-            >
-              {val.toUpperCase()}
-            </button>
-          ))}
-        </div>
       </div>
     </div>
   );

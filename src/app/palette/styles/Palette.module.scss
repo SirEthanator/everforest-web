@@ -6,7 +6,7 @@
   }
 }
 
-.palette:not(:last-child) {
+.palette {
   border-bottom: vars.$divider-width solid var(--bg2);
 }
 
