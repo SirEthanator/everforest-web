@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className={s.root}>
       <div className={s.titleBox}>
-        <h1 className={s.title}>EVERFOREST</h1>
+        <h1 className={`${s.title} siteTitle`}>EVERFOREST</h1>
         <div className={s.description}>
           <h3>Warm, Comfortable, Pleasant</h3>
           <p>

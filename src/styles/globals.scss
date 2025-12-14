@@ -40,6 +40,7 @@ body {
   min-height: 100dvh;
   background-color: var(--bg0);
   color: var(--fg);
+  font-family: var(--font-main);
 }
 
 p {
@@ -48,14 +49,7 @@ p {
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
-}
-
-h1, h2, h3 {
-  font-family: var(--font-heading);
-}
-
-h4, h5, h6, p {
-  font-family: var(--font-body);
+  font-family: var(--font-main);
 }
 
 h1 {
@@ -89,7 +83,7 @@ h5 {
 
 input, button {
   all: unset;
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   font-size: vars.$fsize-main;
 
   background-color: var(--bg-dim);
@@ -98,6 +92,7 @@ input, button {
 
 button {
   cursor: pointer;
+  font-family: var(--font-mono);
 
   &:hover {
     background-color: var(--bg1);
@@ -116,4 +111,10 @@ a {
   &:visited {
     color: var(--purple)
   }
+}
+
+.siteTitle {
+  font-weight: 1000;
+  font-variation-settings: "wdth" 140, "XTRA" 520, "slnt" -8;
+  color: var(--green);
 }

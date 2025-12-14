@@ -51,11 +51,13 @@
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - $clip-width), calc(100% - $clip-width) 100%, 0 100%);
 }
 
-.linkIcon {
+.itemTitle {
+  font-weight: 600;
+}
+
+.openBtn {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: vars.$padding-main;
-
-  font-family: var(--font-mono);
 }

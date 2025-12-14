@@ -38,7 +38,7 @@ export default function NavBar({ activePage, hideHeading }: NavBarProps) {
           className={`${s.headingWrap} ${hideHeading ? s.hidden : ""}`}
           href="/"
         >
-          <h3 className={s.heading}>EVERFOREST</h3>
+          <h3 className={`${s.heading} siteTitle`}>EVERFOREST</h3>
         </Link>
 
         <div className={s.linkList}>

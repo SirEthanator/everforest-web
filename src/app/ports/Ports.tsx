@@ -17,9 +17,9 @@ function Item({ title, url, Icon }: Port) {
           <DisplayedIcon />
         </div>
 
-        <h5>{title}</h5>
-        <button className={s.linkIcon}>
-          <IconExternalLink className={s.linkIcon} />
+        <h5 className={s.itemTitle}>{title}</h5>
+        <button className={s.openBtn}>
+          <IconExternalLink />
           Open
         </button>
       </div>

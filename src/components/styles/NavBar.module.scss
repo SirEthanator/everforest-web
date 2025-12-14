@@ -37,12 +37,8 @@
 }
 
 .heading {
-  color: var(--green);
-
   font-size: navvars.$heading-fsize;
   line-height: navvars.$heading-fsize;
-  font-weight: 1000;
-  font-variation-settings: "wdth" 140, "XTRA" 520, "slnt" -8;
 }
 
 .linkList {
