@@ -1,0 +1,7 @@
+@use "@/components/styles/NavBar_vars" as navvars;
+
+.root {
+  flex: 1 1 calc(100dvh - navvars.$height);
+  display: flex;
+  flex-direction: column;
+}

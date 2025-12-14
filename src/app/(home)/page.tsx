@@ -1,14 +1,10 @@
 import PageTemplate from "@/components/PageTemplate";
-import Cards from "./Cards";
-import ColorStrips from "./ColorStrips";
-import Header from "./Header";
+import Content from "./Content";
 
 export default function Page() {
   return (
     <PageTemplate activePage="home" hideNavHeading>
-      <Header />
-      <ColorStrips />
-      <Cards />
+      <Content />
     </PageTemplate>
   );
 }
