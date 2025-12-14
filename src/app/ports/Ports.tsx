@@ -36,6 +36,8 @@ export default function Ports({ query }: PortsProps) {
     port.title.toLowerCase().includes(query.toLowerCase())
   );
 
+  // TODO: Show "No Results" when filtered_data is empty
+
   return (
     <div className={s.root}>
       {filtered_data.map((item) => (

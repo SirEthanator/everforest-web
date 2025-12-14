@@ -3,6 +3,7 @@
 .root {
   display: flex;
   flex-direction: column;
+  border-bottom: vars.$divider-width solid var(--bg2);
 }
 
 .item {

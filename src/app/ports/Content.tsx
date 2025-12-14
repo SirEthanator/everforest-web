@@ -10,8 +10,8 @@ export default function Content() {
 
   return (
     <div className={s.root}>
-      <Ports query={query} />
       <Search setQuery={setQuery} />
+      <Ports query={query} />
     </div>
   )
 }
