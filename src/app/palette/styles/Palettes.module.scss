@@ -11,7 +11,7 @@
 
 .contrastPicker {
   position: sticky;
-  bottom: 0;
+  bottom: - vars.$divider-width;
   z-index: 10;
 
   display: flex;
@@ -20,6 +20,8 @@
   border-top: vars.$divider-width solid var(--bg2);
 
   margin-top: auto;
+
+  border-bottom: vars.$divider-width solid var(--bg2);
 }
 
 .contrastPickerContent {

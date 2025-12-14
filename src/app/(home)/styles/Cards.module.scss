@@ -6,6 +6,8 @@
 
   background-color: var(--bg-dim);
   padding: 0 vars.$padding-edges;
+
+  border-bottom: vars.$divider-width solid var(--bg2);
 }
 
 .content {

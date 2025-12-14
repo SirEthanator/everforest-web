@@ -7,13 +7,15 @@ $padding: vars.$padding-main;
   justify-content: center;
 
   position: sticky;
-  bottom: 0;
+  bottom: - vars.$divider-width;
   z-index: 10;
 
   background-color: var(--bg-dim);
   border-top: vars.$divider-width solid var(--bg2);
 
   margin-top: auto;
+
+  border-bottom: vars.$divider-width solid var(--bg2);
 }
 
 .content {
