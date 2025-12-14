@@ -87,21 +87,27 @@ h5 {
   height: 1em;
 }
 
-button {
+input, button {
   all: unset;
   font-family: var(--font-body);
   font-size: vars.$fsize-main;
 
   background-color: var(--bg-dim);
   padding: vars.$padding-main;
+}
 
+button {
   cursor: pointer;
 
   &:hover {
-    background-color: var(--bg2);
+    background-color: var(--bg1);
   }
 
   @include vars.transition-main;
+}
+
+input {
+  cursor: text;
 }
 
 a {
@@ -111,4 +117,3 @@ a {
     color: var(--purple)
   }
 }
-

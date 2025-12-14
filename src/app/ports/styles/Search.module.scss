@@ -1,0 +1,41 @@
+@use "@/styles/vars" as vars;
+
+$padding: vars.$padding-main;
+
+.root {
+  display: flex;
+  justify-content: center;
+
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+
+  background-color: var(--bg-dim);
+  border-top: vars.$divider-width solid var(--bg2);
+
+  margin-top: auto;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-main;
+
+  width: 100%;
+  max-width: vars.$max-width-main;
+
+  padding: 0 vars.$padding-edges;
+}
+
+.icon {
+  font-size: vars.$fsize-heading-small;
+  padding: $padding 0;
+}
+
+.input {
+  flex: 1;
+
+  font-size: vars.$fsize-med;
+  padding: $padding;
+  padding-right: 0;
+}

@@ -1,30 +1,30 @@
 import {
-  IconAppsFilled,
+  IconApps,
   IconArrowNarrowRight,
-  IconChristmasTreeFilled,
-  IconExternalLink,
-  IconPaletteFilled
+  IconChristmasTree,
+  IconColorSwatch,
+  IconExternalLink
 } from "@tabler/icons-react";
 import Link from "next/link";
 import s from "./styles/Cards.module.scss";
 
 const cards: Array<CardProps> = [
   {
-    icon: <IconPaletteFilled />,
+    icon: <IconColorSwatch />,
     title: "Beautiful Colors",
     desc: "Discover the carefully constructed palette of Everforest.",
     link: "/palette",
     linkText: "Palette"
   },
   {
-    icon: <IconAppsFilled />,
+    icon: <IconApps />,
     title: "Themes For All",
     desc: "Enjoy Everforest throughout your system with themes for popular applications.",
     link: "/ports",
     linkText: "Ports"
   },
   {
-    icon: <IconChristmasTreeFilled />,
+    icon: <IconChristmasTree />,
     title: "Where it Started",
     desc: "Check out the original color scheme created by Sainnhe Park for Vim.",
     link: "https://github.com/sainnhe/everforest",

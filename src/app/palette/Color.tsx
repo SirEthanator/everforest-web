@@ -35,7 +35,7 @@ export default function Color({ title, hex }: ColorType) {
     <div className={s.color}>
       <div className={s.content}>
         <div className={s.swatch} style={{ backgroundColor: `#${hex}` }} />
-        <p className={s.title}>{title}</p>
+        <h5 className={s.title}>{title}</h5>
         <button
           className={s.copyBtn}
           style={{ color: copyBtnColor }}

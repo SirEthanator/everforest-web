@@ -26,8 +26,20 @@ export default function Palettes() {
         {contrastLevels.map((val: ContrastLevel) => {
           return (
             <div key={val} className={s.paletteGroup}>
-              <Palette contrast={val} title="Dark" colors={dark} collapsed={darkCollapsed} setCollapsed={setDarkCollapsed} />
-              <Palette contrast={val} title="Light" colors={light} collapsed={lightCollapsed} setCollapsed={setLightCollapsed} />
+              <Palette
+                contrast={val}
+                title="Dark"
+                colors={dark}
+                collapsed={darkCollapsed}
+                setCollapsed={setDarkCollapsed}
+              />
+              <Palette
+                contrast={val}
+                title="Light"
+                colors={light}
+                collapsed={lightCollapsed}
+                setCollapsed={setLightCollapsed}
+              />
             </div>
           );
         })}
