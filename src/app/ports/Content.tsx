@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Ports from "./Ports";
 import Search from "./Search";
-import s from "./styles/Content.module.scss"
+import s from "./styles/Content.module.scss";
 
 export default function Content() {
   const [query, setQuery] = useState("");
@@ -13,5 +13,5 @@ export default function Content() {
       <Search setQuery={setQuery} />
       <Ports query={query} />
     </div>
-  )
+  );
 }

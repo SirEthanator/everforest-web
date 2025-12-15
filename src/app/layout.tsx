@@ -53,9 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${fontMain.variable} ${fontMono.variable}`}
-      >
+      <body className={`${fontMain.variable} ${fontMono.variable}`}>
         {children}
       </body>
     </html>

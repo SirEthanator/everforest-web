@@ -1,4 +1,4 @@
-import { IconCube, IconExternalLink } from "@tabler/icons-react";
+import { IconCube, IconExternalLink, IconSearch } from "@tabler/icons-react";
 import Link from "next/link";
 import { ports as data, type Port } from "./data";
 import s from "./styles/Ports.module.scss";
@@ -32,17 +32,27 @@ export type PortsProps = {
 };
 
 export default function Ports({ query }: PortsProps) {
-  const filtered_data = query === "" ? sorted_data : sorted_data.filter((port) =>
-    port.title.toLowerCase().includes(query.toLowerCase())
-  );
+  const filtered_data =
+    query === ""
+      ? sorted_data
+      : sorted_data.filter((port) =>
+          port.title.toLowerCase().includes(query.toLowerCase())
+        );
 
-  // TODO: Show "No Results" when filtered_data is empty
-
-  return (
-    <div className={s.root}>
-      {filtered_data.map((item) => (
-        <Item {...item} key={item.title} />
-      ))}
-    </div>
-  );
+  if (filtered_data.length > 0) {
+    return (
+      <div className={s.ports}>
+        {filtered_data.map((item) => (
+          <Item {...item} key={item.title} />
+        ))}
+      </div>
+    );
+  } else {
+    return (
+      <div className={s.noResults}>
+        <IconSearch className={s.noResultsIcon} />
+        <h3>No results found for "{query}"</h3>
+      </div>
+    );
+  }
 }

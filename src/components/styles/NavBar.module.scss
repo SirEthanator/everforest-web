@@ -8,6 +8,9 @@
 .navBar {
   flex: 0 0 navvars.$height;
 
+  min-height: navvars.$height;
+  max-height: navvars.$height;
+
   position: sticky;
   top: 0;
   z-index: 10;

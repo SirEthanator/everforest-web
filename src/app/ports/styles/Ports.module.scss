@@ -1,6 +1,6 @@
 @use "@/styles/vars" as vars;
 
-.root {
+.ports {
   display: flex;
   flex-direction: column;
   border-bottom: vars.$divider-width solid var(--bg2);
@@ -60,4 +60,22 @@
   display: flex;
   align-items: center;
   gap: vars.$padding-main;
+}
+
+.noResults {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: vars.$padding-large;
+
+  background-color: var(--bg0);
+  border-bottom: vars.$divider-width solid var(--bg2);
+}
+
+.noResultsIcon {
+  font-size: 128px;
+  color: var(--bg4);
 }
