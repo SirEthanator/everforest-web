@@ -9,7 +9,7 @@ $padding: vars.$padding-main;
 
   position: sticky;
   top: navvars.$height;
-  z-index: 10;
+  z-index: 5;
 
   background-color: var(--bg-dim);
   border-bottom: vars.$divider-width solid var(--bg2);

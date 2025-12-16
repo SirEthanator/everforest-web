@@ -1,3 +1,7 @@
+$breakpoint-large: 980px;
+$breakpoint-med: 700px;
+$breakpoint-small: 600px;
+
 $max-width-main: 1000px;
 $max-width-large: 1150px;
 
@@ -30,4 +34,3 @@ $ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
   transition: all $transition-length $easing-transition;
   transition-property: background-color, color, border, outline, opacity;
 }
-

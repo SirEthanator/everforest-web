@@ -1,5 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import s from "./styles/NavBar.module.scss";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 
 export type NavPage = {
   id: "home" | "palette" | "ports";
@@ -31,6 +35,8 @@ export type NavBarProps = {
 };
 
 export default function NavBar({ activePage, hideHeading }: NavBarProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className={s.navBar}>
       <div className={s.content}>
@@ -41,7 +47,7 @@ export default function NavBar({ activePage, hideHeading }: NavBarProps) {
           <h3 className={`${s.heading} siteTitle`}>EVERFOREST</h3>
         </Link>
 
-        <div className={s.linkList}>
+        <div className={`${s.linkList} ${menuOpen ? s.menuOpen : ""}`}>
           {pages.map((page) => {
             const classes = [s.link];
             if (activePage === page.id) classes.push(s.active);
@@ -55,6 +61,13 @@ export default function NavBar({ activePage, hideHeading }: NavBarProps) {
             );
           })}
         </div>
+
+        <button
+          className={s.hamburgerBtn}
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          {menuOpen ? <IconX /> : <IconMenu2 />}
+        </button>
       </div>
     </div>
   );
