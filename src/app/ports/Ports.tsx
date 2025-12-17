@@ -57,7 +57,7 @@ export default function Ports({ query }: PortsProps) {
     return (
       <div className={s.noResults}>
         <IconSearch className={s.noResultsIcon} />
-        <h3>No results found for "{query}"</h3>
+        <h3 className={s.noResultsText}>No results found for "{query}"</h3>
       </div>
     );
   }
