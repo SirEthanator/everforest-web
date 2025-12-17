@@ -11,7 +11,6 @@ $bg-width: 75%;
 
 .headerBg {
   $cutoff-width: 70px;
-  $width: 75%;
 
   flex-grow: 1;
   display: flex;
@@ -19,7 +18,7 @@ $bg-width: 75%;
   justify-content: center;
 
   background-color: var(--green);
-  clip-path: polygon(0 0, $width 0, calc($width - $cutoff-width) 100%, 0 100%);
+  clip-path: polygon(0 0, $bg-width 0, calc($bg-width - $cutoff-width) 100%, 0 100%);
 
   padding: $padding vars.$padding-edges;
 }
@@ -34,4 +33,14 @@ $bg-width: 75%;
   font-weight: 1000;
   font-variation-settings: "wdth" 130, "XTRA" 600;
   color: var(--bg-dim);
+}
+
+@media (max-width: vars.$breakpoint-small) {
+  .header {
+    background: none;
+  }
+
+  .headerBg {
+    clip-path: none;
+  }
 }
