@@ -17,7 +17,7 @@ $skew-offset: 80px;
   gap: vars.$padding-large;
 
   position: relative;
-  width: calc($titleBox-width - vars.$padding-edges);
+  max-width: calc($titleBox-width - vars.$padding-edges);
 
   padding: vars.$padding-large 0 vars.$padding-large vars.$padding-edges;
 
@@ -66,3 +66,29 @@ $skew-offset: 80px;
   );
 }
 
+@media (max-width: vars.$breakpoint-large) {
+  .colorStrips {
+    display: none;
+  }
+
+  .titleBox {
+    max-width: none;
+    padding: vars.$padding-large vars.$padding-edges;
+  }
+}
+
+@media (max-width: vars.$breakpoint-med) {
+  .title {
+    font-size: vars.$fsize-heading;
+  }
+
+  .titleBox {
+    gap: vars.$padding-med-large;
+  }
+}
+
+@media (max-width: vars.$breakpoint-small) {
+  .title {
+    font-size: vars.$fsize-heading-small;
+  }
+}

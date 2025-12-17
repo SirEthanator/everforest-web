@@ -12,7 +12,6 @@
 
 .content {
   display: flex;
-  justify-content: stretch;
   max-width: vars.$max-width-large;
 }
 
@@ -20,7 +19,6 @@
   flex: 1 1 0;
 
   display: flex;
-  justify-content: stretch;
 
   border-left: vars.$divider-width solid var(--bg2);
 
@@ -32,6 +30,7 @@
 }
 
 .card {
+  flex: 1;
   display: flex;
   flex-direction: column;
 
@@ -57,7 +56,7 @@
   justify-content: center;
 
   align-self: flex-start;
-  font-size: vars.$fsize-heading-small;
+  font-size: vars.$fsize-large;
 
   background-color: var(--bg0);
   padding: vars.$padding-med-small;
@@ -92,3 +91,24 @@
   margin-top: auto;
 }
 
+@media (max-width: vars.$breakpoint-med-large) {
+  .root {
+    padding: 0;
+  }
+
+  .content {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .cardWrapper {
+    width: 100%;
+
+    border: none;
+    border-bottom: vars.$divider-width solid var(--bg2);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

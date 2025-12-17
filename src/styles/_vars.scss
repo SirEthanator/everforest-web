@@ -1,6 +1,8 @@
 $breakpoint-large: 980px;
+$breakpoint-med-large: 820px;
 $breakpoint-med: 700px;
 $breakpoint-small: 600px;
+// $breakpoint-xsmall: 380px;
 
 $max-width-main: 1000px;
 $max-width-large: 1150px;
@@ -12,6 +14,7 @@ $padding-small: 8px;
 $padding-main: 12px;
 $padding-med-small: 16px;
 $padding-med: 18px;
+$padding-med-large: 22px;
 $padding-large: 28px;
 
 $padding-edges: $padding-med;
@@ -19,8 +22,9 @@ $padding-edges: $padding-med;
 $fsize-main: 16px;
 $fsize-med-small: 18px;
 $fsize-med: 22px;
-$fsize-med-large: 28px;
-$fsize-heading-small: 32px;
+$fsize-med-large: 26px;
+$fsize-large: 32px;
+$fsize-heading-small: 38px;
 $fsize-heading: 46px;
 $fsize-heading-large: 58px;
 
