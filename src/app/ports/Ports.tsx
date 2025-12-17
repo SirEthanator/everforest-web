@@ -1,29 +1,35 @@
 import { IconCube, IconExternalLink, IconSearch } from "@tabler/icons-react";
 import Link from "next/link";
-import { ports as data, type Port } from "./data";
+import { categoryIconMap, ports as data, type Port } from "./data";
 import s from "./styles/Ports.module.scss";
 
 const sorted_data = data.sort((a: Port, b: Port) =>
   a.title.localeCompare(b.title)
 );
 
-function Item({ title, url, Icon }: Port) {
-  const DisplayedIcon = Icon ?? IconCube;
+function Item({ title, url, category, author, authorUrl }: Port) {
+  const Icon = category ? categoryIconMap[category] : IconCube;
 
   return (
-    <Link className={s.item} href={url} target="_blank">
+    <div className={s.item}>
       <div className={s.itemContent}>
         <div className={s.itemIcon}>
-          <DisplayedIcon />
+          <Icon />
         </div>
 
-        <h5 className={s.itemTitle}>{title}</h5>
-        <button className={s.openBtn}>
+        <div className={s.itemText}>
+          <h5 className={s.itemTitle}>{title}</h5>
+          <Link className={s.itemAuthor} href={authorUrl} target="_blank">
+            by {author}
+          </Link>
+        </div>
+
+        <Link className={`${s.openBtn} linkButton`} href={url} target="_blank">
           <IconExternalLink />
           Open
-        </button>
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 }
 
@@ -43,7 +49,7 @@ export default function Ports({ query }: PortsProps) {
     return (
       <div className={s.ports}>
         {filtered_data.map((item) => (
-          <Item {...item} key={item.title} />
+          <Item {...item} key={item.title + item.author} />
         ))}
       </div>
     );

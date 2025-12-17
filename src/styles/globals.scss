@@ -79,10 +79,12 @@ h5 {
 .tabler-icon {
   width: 1em;
   height: 1em;
+  color: var(--fg);
 }
 
-input, button {
+input, button, .linkButton {
   all: unset;
+  color: var(--fg);
   font-family: var(--font-main);
   font-size: vars.$fsize-main;
 
@@ -90,7 +92,7 @@ input, button {
   padding: vars.$padding-main;
 }
 
-button {
+button, .linkButton {
   cursor: pointer;
   font-family: var(--font-mono);
 
@@ -99,6 +101,10 @@ button {
   }
 
   @include vars.transition-main;
+}
+
+.linkButton:visited {
+  color: var(--fg);
 }
 
 input {
