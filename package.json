@@ -11,17 +11,24 @@
     "format": "biome format --write"
   },
   "dependencies": {
-    "@tabler/icons-react": "^3.35.0",
-    "next": "16.0.7",
-    "react": "19.2.1",
-    "react-dom": "19.2.1",
-    "sass": "^1.94.2"
+    "@tabler/icons-react": "^3.36.0",
+    "next": "16.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "sass": "^1.97.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.8",
-    "@types/node": "^24.10.1",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
+    "@biomejs/biome": "2.3.10",
+    "@types/node": "^24.10.4",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.26.1",
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.2.7",
+      "@types/react-dom": "19.2.3"
+    }
   }
 }
