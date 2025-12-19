@@ -3,7 +3,8 @@
 .root {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: vars.$padding-main;
 
   background-color: var(--bg-dim);
   padding: vars.$padding-main vars.$padding-edges;
@@ -11,7 +12,14 @@
   margin-top: auto;
 }
 
-.text {
-  text-align: center;
-}
+.githubLink {
+  display: flex;
 
+  font-size: vars.$fsize-med-large;
+  color: var(--fg);
+  text-decoration: none;
+
+  &:visited {
+    color: var(--fg);
+  }
+}
