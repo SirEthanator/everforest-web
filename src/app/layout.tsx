@@ -26,10 +26,20 @@ const fontMono = Roboto_Mono({
   subsets: ["latin"]
 });
 
+const SITE_NAME = "Everforest";
+const SITE_DESC =
+  "Everforest is a green based color scheme; it's designed to be warm and soft in order to protect developers' eyes.";
+
 export const metadata: Metadata = {
-  title: "Everforest", // Default title if not specified on page
-  description:
-    "A warm, comfortable, and pleasant color scheme based around green designed to be easy on the eyes.",
+  title: {
+    template: `%s | ${SITE_NAME}`,
+    default: SITE_NAME
+  },
+  description: SITE_DESC,
+  openGraph: {
+    title: SITE_NAME,
+    description: SITE_DESC
+  },
   keywords: [
     "everforest",
     "green",
