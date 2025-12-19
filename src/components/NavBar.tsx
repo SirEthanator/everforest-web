@@ -30,7 +30,7 @@ export const pages: Array<NavPage> = [
 ];
 
 export type NavBarProps = {
-  activePage: NavPage["id"];
+  activePage?: NavPage["id"];
   hideHeading?: boolean;
 };
 
