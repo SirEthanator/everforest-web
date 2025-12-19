@@ -38,6 +38,7 @@ export default function Color({ title, hex }: ColorType) {
         <h5 className={s.title}>{title}</h5>
         <button
           className={s.copyBtn}
+          type="button"
           style={{ color: copyBtnColor }}
           onClick={async () => {
             try {

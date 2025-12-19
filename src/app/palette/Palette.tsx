@@ -31,6 +31,7 @@ export default function Palette({
         <div className={s.headingContent}>
           <button
             className={dropBtnClasses.join(" ")}
+            type="button"
             onClick={() => setCollapsed((prev) => !prev)}
           >
             <IconChevronUp />

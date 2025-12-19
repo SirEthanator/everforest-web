@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import s from "./styles/NavBar.module.scss";
 import { IconMenu2, IconX } from "@tabler/icons-react";
+import Link from "next/link";
+import { useState } from "react";
+import s from "./styles/NavBar.module.scss";
 
 export type NavPage = {
   id: "home" | "palette" | "ports";
@@ -64,6 +64,7 @@ export default function NavBar({ activePage, hideHeading }: NavBarProps) {
 
         <button
           className={s.hamburgerBtn}
+          type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
           {menuOpen ? <IconX /> : <IconMenu2 />}

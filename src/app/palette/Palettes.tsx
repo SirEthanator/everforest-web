@@ -23,6 +23,7 @@ export default function Palettes() {
             <button
               key={val}
               className={`${s.contrastBtn} ${val === contrast ? s.active : ""}`}
+              type="button"
               onClick={() => setContrast(val)}
             >
               {val.toUpperCase()}
