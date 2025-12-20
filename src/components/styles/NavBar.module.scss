@@ -83,6 +83,9 @@
 
 .hamburgerBtn {
   display: none;
+  align-items: center;
+  justify-content: center;
+
   margin-left: auto;
   padding: 0;
 
@@ -97,7 +100,7 @@
 
 @media (max-width: vars.$breakpoint-small) {
   .hamburgerBtn {
-    display: unset;
+    display: flex;
   }
 
   .linkList {
