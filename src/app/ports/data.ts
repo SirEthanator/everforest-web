@@ -86,6 +86,13 @@ export const ports: Array<Port> = [
     url: "https://github.com/neanias/everforest-nvim"
   },
   {
+    title: "CotEditor",
+    author: "@VasylRomanets",
+    authorUrl: "https://github.com/VasylRomanets",
+    category: "Editors",
+    url: "https://github.com/VasylRomanets/everforest-coteditor"
+  },
+  {
     title: "Replit",
     author: "@talwat",
     authorUrl: "https://github.com/talwat",
