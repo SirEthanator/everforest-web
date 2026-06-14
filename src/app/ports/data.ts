@@ -288,6 +288,12 @@ export const ports: Array<Port> = [
     url: "https://github.com/mhanberg/everforest-alfred"
   },
   {
+    title: "bat",
+    author: "@VasylRomanets",
+    authorUrl: "https://github.com/VasylRomanets",
+    url: "https://github.com/VasylRomanets/everforest-bat"
+  },
+  {
     title: "Calibre",
     author: "@morph626",
     authorUrl: "https://github.com/morph626",
