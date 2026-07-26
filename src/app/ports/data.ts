@@ -121,6 +121,13 @@ export const ports: Array<Port> = [
     url: "https://github.com/atomashevic/everforest-micro"
   },
   {
+    title: "Notepad++",
+    author: "@Every0ne",
+    authorUrl: "https://github.com/Every0ne",
+    category: "Editors",
+    url: "https://github.com/Every0ne/npp-everforest-dark"
+  },
+  {
     title: "Kakoune",
     author: "@jdugan6240",
     authorUrl: "https://codeberg.org/jdugan6240",
