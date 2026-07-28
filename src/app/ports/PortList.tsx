@@ -1,6 +1,7 @@
-import { IconCube, IconExternalLink, IconSearch } from "@tabler/icons-react";
+import { IconExternalLink, IconSearch } from "@tabler/icons-react";
 import Link from "next/link";
-import { categoryIconMap, ports as data, type Port } from "./data";
+import type { Port } from "@/data/types/ports";
+import { categoryIconMap, ports as data } from "./data";
 import s from "./styles/Ports.module.scss";
 
 const sorted_data = data.sort((a: Port, b: Port) =>
@@ -8,7 +9,7 @@ const sorted_data = data.sort((a: Port, b: Port) =>
 );
 
 function Item({ title, url, category, author, authorUrl }: Port) {
-  const Icon = category ? categoryIconMap[category] : IconCube;
+  const Icon = categoryIconMap[category];
 
   return (
     <div className={s.item}>
@@ -33,11 +34,11 @@ function Item({ title, url, category, author, authorUrl }: Port) {
   );
 }
 
-export type PortsProps = {
+export type PortListProps = {
   query: string;
 };
 
-export default function Ports({ query }: PortsProps) {
+export default function PortList({ query }: PortListProps) {
   const filtered_data =
     query === ""
       ? sorted_data

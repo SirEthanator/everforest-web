@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import Ports from "./Ports";
-import Search from "./Search";
+import PortList from "./PortList";
+import SearchBar from "./SearchBar";
 import s from "./styles/Content.module.scss";
 
 export default function Content() {
-  const [query, setQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div className={s.root}>
-      <Search setQuery={setQuery} />
-      <Ports query={query} />
+      <SearchBar setQuery={setSearchQuery} />
+      <PortList query={searchQuery} />
     </div>
   );
 }

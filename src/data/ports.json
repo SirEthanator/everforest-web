@@ -1,0 +1,415 @@
+[
+  {
+    "title": "NixOS",
+    "category": "None",
+    "author": "@fwinter",
+    "authorUrl": "https://codeberg.org/fwinter",
+    "url": "https://codeberg.org/fwinter/everforest-nix"
+  },
+  {
+    "title": "GNOME Builder",
+    "category": "IDEs",
+    "author": "@n1yn",
+    "authorUrl": "https://github.com/n1yn",
+    "url": "https://github.com/n1yn/everforest-gnome-builder"
+  },
+  {
+    "title": "JetBrains",
+    "category": "IDEs",
+    "author": "@francma",
+    "authorUrl": "https://github.com/francma",
+    "url": "https://github.com/francma/everforest-jetbrains"
+  },
+  {
+    "title": "Visual Studio 2022",
+    "category": "IDEs",
+    "author": "@ZachFranzen",
+    "authorUrl": "https://github.com/ZachFranzen",
+    "url": "https://github.com/ZachFranzen/Everforest"
+  },
+  {
+    "title": "Doom Emacs",
+    "category": "Editors",
+    "author": "@Cardoso1994",
+    "authorUrl": "https://github.com/Cardoso1994",
+    "url": "https://github.com/Cardoso1994/doom-everforest-theme"
+  },
+  {
+    "title": "Emacs",
+    "category": "Editors",
+    "author": "@theorytoe",
+    "authorUrl": "https://github.com/theorytoe",
+    "url": "https://github.com/theorytoe/everforest-emacs"
+  },
+  {
+    "title": "Vim",
+    "category": "Editors",
+    "author": "@sainnhe",
+    "authorUrl": "https://github.com/sainnhe",
+    "url": "https://github.com/sainnhe/everforest"
+  },
+  {
+    "title": "Neovim (Lua port)",
+    "category": "Editors",
+    "author": "@neanias",
+    "authorUrl": "https://github.com/neanias",
+    "url": "https://github.com/neanias/everforest-nvim"
+  },
+  {
+    "title": "CotEditor",
+    "category": "Editors",
+    "author": "@VasylRomanets",
+    "authorUrl": "https://github.com/VasylRomanets",
+    "url": "https://github.com/VasylRomanets/everforest-coteditor"
+  },
+  {
+    "title": "Replit",
+    "category": "Editors",
+    "author": "@talwat",
+    "authorUrl": "https://github.com/talwat",
+    "url": "https://replit.com/theme/@talwat321/everforest"
+  },
+  {
+    "title": "Textmate/Sublime Text",
+    "category": "Editors",
+    "author": "@mhanberg",
+    "authorUrl": "https://github.com/mhanberg",
+    "url": "https://github.com/mhanberg/everforest-textmate"
+  },
+  {
+    "title": "Visual Studio Code",
+    "category": "Editors",
+    "author": "@sainnhe",
+    "authorUrl": "https://github.com/sainnhe",
+    "url": "https://github.com/sainnhe/everforest-vscode"
+  },
+  {
+    "title": "Micro",
+    "category": "Editors",
+    "author": "@atomashevic",
+    "authorUrl": "https://github.com/atomashevic",
+    "url": "https://github.com/atomashevic/everforest-micro"
+  },
+  {
+    "title": "Notepad++",
+    "category": "Editors",
+    "author": "@Every0ne",
+    "authorUrl": "https://github.com/Every0ne",
+    "url": "https://github.com/Every0ne/npp-everforest-dark"
+  },
+  {
+    "title": "Kakoune",
+    "category": "Editors",
+    "author": "@jdugan6240",
+    "authorUrl": "https://codeberg.org/jdugan6240",
+    "url": "https://codeberg.org/jdugan6240/everforest.kak"
+  },
+  {
+    "title": "Alacritty",
+    "category": "Terminal Emulators",
+    "author": "@sainnhe",
+    "authorUrl": "https://github.com/sainnhe",
+    "url": "https://gist.github.com/sainnhe/6432f83181c4520ea87b5211fed27950"
+  },
+  {
+    "title": "Foot",
+    "category": "Terminal Emulators",
+    "author": "@jakesco",
+    "authorUrl": "https://github.com/jakesco",
+    "url": "https://gist.github.com/jakesco/c9b11f362f4ae0251ba2ca99a4e1e005"
+  },
+  {
+    "title": "GNOME Terminal",
+    "category": "Terminal Emulators",
+    "author": "@em3n",
+    "authorUrl": "https://github.com/em3n",
+    "url": "https://github.com/em3n/Everforest-GnomeTerminal"
+  },
+  {
+    "title": "Ghostty",
+    "category": "Terminal Emulators",
+    "author": "@metalelf0",
+    "authorUrl": "https://github.com/metalelf0",
+    "url": "https://github.com/metalelf0/everforest.ghostty"
+  },
+  {
+    "title": "Hyper",
+    "category": "Terminal Emulators",
+    "author": "@tani",
+    "authorUrl": "https://github.com/tani",
+    "url": "https://github.com/tani/hyper-everforest"
+  },
+  {
+    "title": "iTerm2",
+    "category": "Terminal Emulators",
+    "author": "@icewind",
+    "authorUrl": "https://github.com/icewind",
+    "url": "https://github.com/icewind/everforest.iterm2"
+  },
+  {
+    "title": "iTerm2",
+    "category": "Terminal Emulators",
+    "author": "@sainnhe",
+    "authorUrl": "https://github.com/sainnhe",
+    "url": "https://github.com/sainnhe/dotfiles/tree/master/.macos/iTerm2/colors"
+  },
+  {
+    "title": "Kitty",
+    "category": "Terminal Emulators",
+    "author": "@ewal",
+    "authorUrl": "https://github.com/ewal",
+    "url": "https://github.com/kovidgoyal/kitty-themes/tree/master"
+  },
+  {
+    "title": "Konsole",
+    "category": "Terminal Emulators",
+    "author": "@sainnhe",
+    "authorUrl": "https://github.com/sainnhe",
+    "url": "https://store.kde.org/c/1638326"
+  },
+  {
+    "title": "MobaXterm",
+    "category": "Terminal Emulators",
+    "author": "@broot5",
+    "authorUrl": "https://github.com/broot5",
+    "url": "https://gist.github.com/broot5/1d9d5ea97ef6e7cf48a31bd45e47e771"
+  },
+  {
+    "title": "Tilix",
+    "category": "Terminal Emulators",
+    "author": "@spacefall",
+    "authorUrl": "https://github.com/spacefall",
+    "url": "https://github.com/spacefall/everforest-tilix"
+  },
+  {
+    "title": "WezTerm",
+    "category": "Terminal Emulators",
+    "author": "@frdwin",
+    "authorUrl": "https://github.com/frdwin",
+    "url": "https://github.com/frdwin/everforest-for-wezterm"
+  },
+  {
+    "title": "Windows Terminal",
+    "category": "Terminal Emulators",
+    "author": "@suppayami",
+    "authorUrl": "https://github.com/suppayami",
+    "url": "https://gist.github.com/suppayami/7d427d116b97564d1c565a7aed092d08"
+  },
+  {
+    "title": "Xfce4-Terminal",
+    "category": "Terminal Emulators",
+    "author": "@toabr",
+    "authorUrl": "https://github.com/toabr",
+    "url": "https://github.com/toabr/everforest-xfce4-terminal"
+  },
+  {
+    "title": "Chrome",
+    "category": "Web Browsers",
+    "author": "@talwat",
+    "authorUrl": "https://github.com/talwat",
+    "url": "https://github.com/talwat/dotfiles/tree/main/macOS/everforest/chrome/everforest"
+  },
+  {
+    "title": "Firefox",
+    "category": "Web Browsers",
+    "author": "@sainnhe",
+    "authorUrl": "https://github.com/sainnhe",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/everforest-dark-official"
+  },
+  {
+    "title": "Firefox",
+    "category": "Web Browsers",
+    "author": "@talwat",
+    "authorUrl": "https://github.com/talwat",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/everforest-medium-dark"
+  },
+  {
+    "title": "Firefox",
+    "category": "Web Browsers",
+    "author": "@aaheen",
+    "authorUrl": "https://github.com/aaheen",
+    "url": "https://addons.mozilla.org/en-US/firefox/addon/everforest-spectrum-dark-soft"
+  },
+  {
+    "title": "Monkeytype",
+    "category": "Website Themes",
+    "author": "@mel4tonin",
+    "authorUrl": "https://github.com/mel4tonin",
+    "url": "https://monkeytype.com/?customTheme=eyJjIjpbIiMyZDM1M2IiLCIjYTdjMDgwIiwiI2E3YzA4MCIsIiM5ZGE5YTAiLCIjMjMyYTJlIiwiI2QzYzZhYSIsIiNlNjdlODAiLCIjNTQzYTQ4IiwiI2U2N2U4MCIsIiM1NDNhNDgiXSwiaSI6IiIsInMiOiJjb3ZlciIsImYiOlswLDEsMSwxXX0="
+  },
+  {
+    "title": "Nitter",
+    "category": "Website Themes",
+    "author": "@cozy-isaac",
+    "authorUrl": "https://github.com/cozy-isaac",
+    "url": "https://github.com/cozy-isaac/nitter-everforest"
+  },
+  {
+    "title": "Proton Mail/Drive/Calendar",
+    "category": "Website Themes",
+    "author": "@cozy-isaac",
+    "authorUrl": "https://github.com/cozy-isaac",
+    "url": "https://github.com/cozy-isaac/proton-everforest"
+  },
+  {
+    "title": "Youtube",
+    "category": "Website Themes",
+    "author": "@mel4tonin",
+    "authorUrl": "https://github.com/mel4tonin",
+    "url": "https://github.com/mel4tonin/everforest-youtube"
+  },
+  {
+    "title": "Alfred",
+    "category": "None",
+    "author": "@mhanberg",
+    "authorUrl": "https://github.com/mhanberg",
+    "url": "https://github.com/mhanberg/everforest-alfred"
+  },
+  {
+    "title": "bat",
+    "category": "None",
+    "author": "@VasylRomanets",
+    "authorUrl": "https://github.com/VasylRomanets",
+    "url": "https://github.com/VasylRomanets/everforest-bat"
+  },
+  {
+    "title": "Calibre",
+    "category": "None",
+    "author": "@morph626",
+    "authorUrl": "https://github.com/morph626",
+    "url": "https://gist.github.com/morph626/76dbe01a7e245ca6e6d67c5ca76bf953"
+  },
+  {
+    "title": "colorls",
+    "category": "None",
+    "author": "@talwat",
+    "authorUrl": "https://github.com/talwat",
+    "url": "https://github.com/talwat/dotfiles/blob/main/macOS/everforest/.config/colorls/dark_colors.yaml"
+  },
+  {
+    "title": "ComfyUI",
+    "category": "None",
+    "author": "@ilonis",
+    "authorUrl": "https://github.com/ilonis",
+    "url": "https://github.com/Ilonis/everforest-ComfyUI"
+  },
+  {
+    "title": "Cursors",
+    "category": "None",
+    "author": "@talwat",
+    "authorUrl": "https://github.com/talwat",
+    "url": "https://github.com/talwat/everforest-cursors"
+  },
+  {
+    "title": "dipc",
+    "category": "None",
+    "author": "@doprz",
+    "authorUrl": "https://github.com/doprz",
+    "url": "https://github.com/doprz/dipc"
+  },
+  {
+    "title": "Gitea",
+    "category": "None",
+    "author": "@sainnhe",
+    "authorUrl": "https://git.sainnhe.dev/sainnhe",
+    "url": "https://git.sainnhe.dev/sainnhe/gitea-themes"
+  },
+  {
+    "title": "Insomnia",
+    "category": "None",
+    "author": "@talwat",
+    "authorUrl": "https://github.com/talwat",
+    "url": "https://github.com/talwat/insomnia-plugin-everforest-theme"
+  },
+  {
+    "title": "GTK",
+    "category": "None",
+    "author": "@Fausto-Korpsvart",
+    "authorUrl": "https://github.com/Fausto-Korpsvart",
+    "url": "https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme"
+  },
+  {
+    "title": "KDE",
+    "category": "None",
+    "author": "@Serge2702",
+    "authorUrl": "https://github.com/Serge2702",
+    "url": "https://github.com/Serge2702/KDE-Everforest.git"
+  },
+  {
+    "title": "Obsidian",
+    "category": "None",
+    "author": "@kepano",
+    "authorUrl": "https://github.com/kepano",
+    "url": "https://github.com/kepano/obsidian-minimal"
+  },
+  {
+    "title": "Redlib/Libreddit",
+    "category": "None",
+    "author": "@cozy-isaac",
+    "authorUrl": "https://github.com/cozy-isaac",
+    "url": "https://github.com/cozy-isaac/searxng-everforest"
+  },
+  {
+    "title": "SearXNG",
+    "category": "None",
+    "author": "@cozy-isaac",
+    "authorUrl": "https://github.com/cozy-isaac",
+    "url": "https://github.com/cozy-isaac/searxng-everforest"
+  },
+  {
+    "title": "Shiki.js",
+    "category": "None",
+    "author": "@serdonke",
+    "authorUrl": "https://github.com/serdonke",
+    "url": "https://shiki.style"
+  },
+  {
+    "title": "Slack",
+    "category": "None",
+    "author": "@itendtostare",
+    "authorUrl": "https://github.com/itendtostare",
+    "url": "https://github.com/itendtostare/everforest-slack"
+  },
+  {
+    "title": "tmux",
+    "category": "None",
+    "author": "@talwat",
+    "authorUrl": "https://github.com/talwat",
+    "url": "https://github.com/talwat/dotfiles/blob/main/macOS/everforest/.tmux.conf"
+  },
+  {
+    "title": "tmux-plugin",
+    "category": "None",
+    "author": "@TanglingTreats",
+    "authorUrl": "https://github.com/TanglingTreats",
+    "url": "https://github.com/TanglingTreats/tmux-everforest"
+  },
+  {
+    "title": "Typora",
+    "category": "None",
+    "author": "@YuxBao",
+    "authorUrl": "https://github.com/YuxBao",
+    "url": "https://github.com/YuxBao/everforest-typora"
+  },
+  {
+    "title": "Xresources",
+    "category": "None",
+    "author": "@jef",
+    "authorUrl": "https://github.com/jef",
+    "url": "https://github.com/jef/everforest-xresources"
+  },
+  {
+    "title": "Zelij",
+    "category": "None",
+    "author": "@n1yn",
+    "authorUrl": "https://github.com/n1yn",
+    "url": "https://github.com/n1yn/everforest-dark-zellij"
+  },
+  {
+    "title": "Zsh",
+    "category": "None",
+    "author": "@sainnhe",
+    "authorUrl": "https://github.com/sainnhe",
+    "url": "https://github.com/sainnhe/dotfiles/tree/master/.zsh-theme"
+  }
+]

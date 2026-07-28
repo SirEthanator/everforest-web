@@ -1,11 +1,11 @@
 import { IconSearch } from "@tabler/icons-react";
 import s from "./styles/Search.module.scss";
 
-export type SearchProps = {
+export type SearchBarProps = {
   setQuery: React.Dispatch<React.SetStateAction<string>>;
 };
 
-export default function Search({ setQuery }: SearchProps) {
+export default function SearchBar({ setQuery }: SearchBarProps) {
   return (
     <div className={s.root}>
       <div className={s.content}>
