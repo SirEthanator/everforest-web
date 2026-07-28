@@ -1,13 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import {
-  type ContrastLevel,
-  contrastLevels,
-  dark,
-  light
-} from "@/utils/colors";
-import Palette from "./Palette";
+import { contrastLevels, dark, light } from "@/data/colors";
+import type { ContrastLevel } from "@/data/types/colors";
+import PaletteView from "./PaletteView";
 import s from "./styles/Palettes.module.scss";
 
 export default function Palettes() {
@@ -41,14 +37,14 @@ export default function Palettes() {
         {contrastLevels.map((val: ContrastLevel) => {
           return (
             <div key={val} className={s.paletteGroup}>
-              <Palette
+              <PaletteView
                 contrast={val}
                 title="Dark"
                 colors={dark}
                 collapsed={darkCollapsed}
                 setCollapsed={setDarkCollapsed}
               />
-              <Palette
+              <PaletteView
                 contrast={val}
                 title="Light"
                 colors={light}
