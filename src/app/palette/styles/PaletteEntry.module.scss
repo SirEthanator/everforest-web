@@ -1,4 +1,5 @@
 @use "@/styles/vars" as vars;
+@use "./shared" as shared;
 
 .color {
   display: flex;
@@ -20,7 +21,8 @@
 }
 
 .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: shared.$template-columns;
   align-items: center;
   gap: vars.$padding-main;
 
@@ -38,10 +40,9 @@
   font-weight: 600;
 }
 
-.copyBtn {
+.copyButton {
   display: flex;
   align-items: center;
   gap: vars.$padding-main;
-
-  margin-left: auto;
+  justify-self: end;
 }

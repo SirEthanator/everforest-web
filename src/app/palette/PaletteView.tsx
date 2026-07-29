@@ -1,7 +1,8 @@
 import { IconChevronUp } from "@tabler/icons-react";
 import type { ContrastLevel, Palette } from "@/data/types/colors";
+import { cn } from "@/utils/class-name";
 import PaletteEntry from "./PaletteEntry";
-import s from "./styles/Palette.module.scss";
+import s from "./styles/PaletteView.module.scss";
 
 export type PaletteViewProps = {
   title: string;
@@ -18,29 +19,24 @@ export default function PaletteView({
   collapsed,
   setCollapsed
 }: PaletteViewProps) {
-  const dropBtnClasses = [s.headingDropBtn];
-  const colorsClasses = [s.paletteColors];
-  if (collapsed) {
-    dropBtnClasses.push(s.collapsed);
-    colorsClasses.push(s.collapsed);
-  }
-
   return (
-    <div className={s.palette}>
+    <div className={cn(s.palette, collapsed && s.collapsed)}>
       <div className={s.heading}>
         <div className={s.headingContent}>
           <button
-            className={dropBtnClasses.join(" ")}
+            className={s.headingDropBtn}
             type="button"
             onClick={() => setCollapsed((prev) => !prev)}
           >
             <IconChevronUp />
           </button>
-          <h2>{title}</h2>
+          <h3>{title}</h3>
+          <h5 className={s.columnHeading}>RGB</h5>
+          <h5 className={s.columnHeading}>Hex</h5>
         </div>
       </div>
 
-      <div className={colorsClasses.join(" ")}>
+      <div className={s.paletteColors}>
         {[...colors.common, ...colors[contrast]].map((color) => (
           <PaletteEntry key={color.title} color={color} />
         ))}

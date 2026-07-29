@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { contrastLevels, dark, light } from "@/data/colors";
 import type { ContrastLevel } from "@/data/types/colors";
+import { cn } from "@/utils/class-name";
 import PaletteView from "./PaletteView";
 import s from "./styles/Palettes.module.scss";
 
@@ -18,7 +19,7 @@ export default function Palettes() {
           {contrastLevels.map((val: ContrastLevel) => (
             <button
               key={val}
-              className={`${s.contrastBtn} ${val === contrast ? s.active : ""}`}
+              className={cn(s.contrastBtn, val === contrast && s.active)}
               type="button"
               onClick={() => setContrast(val)}
             >

@@ -6,7 +6,7 @@ An unofficial website made for the [Everforest](https://github.com/sainnhe/everf
 
 ## Features
 
-- Copy colors in HEX format with the click of a button
+- Copy colors in Hex or RGB format with the click of a button
 - Dark & light palette with hard/medium/soft contrast
 - Searchable list of ports
 
