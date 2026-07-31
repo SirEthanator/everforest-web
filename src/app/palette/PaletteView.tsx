@@ -36,11 +36,10 @@ export default function PaletteView({
         </div>
       </div>
 
-      <div className={s.paletteColors}>
-        {[...colors.common, ...colors[contrast]].map((color) => (
-          <PaletteEntry key={color.title} color={color} />
-        ))}
-      </div>
+      {!collapsed &&
+        [...colors.common, ...colors[contrast]].map((color) => {
+          return <PaletteEntry key={color.title} color={color} />;
+        })}
     </div>
   );
 }

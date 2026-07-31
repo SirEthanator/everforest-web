@@ -94,6 +94,7 @@ input, button, .linkButton {
 button, .linkButton {
   cursor: pointer;
   font-family: var(--font-mono);
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--bg1);

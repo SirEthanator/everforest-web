@@ -1,27 +1,51 @@
 @use "@/styles/vars" as vars;
-@use "./shared" as shared;
-
-.collapsed .paletteColors {
-  display: none;
-}
 
 .palette {
   border-bottom: vars.$divider-width solid var(--bg2);
+
+  // NOTE: $min-gutter must be >= $column-gap for gutter calc
+  $column-gap: vars.$padding-main;
+  $min-gutter: vars.$padding-edges;
+
+  // The gutter columns are used to add empty
+  // space on the sides to achieve a max width on
+  // the content but not the backgrounds.
+
+  // This essentially just calculates the margin
+  // needed to centre the content at max width.
+  // Then we just give it a minimum of the margin
+  // used when not at max width.
+  $gutter-column: calc(
+    max(
+      $min-gutter,
+      calc((100% - vars.$max-width-main) / 2)
+    ) - $column-gap // Subtract gap to negate extra space from column-gap
+  );
+
+  display: grid;
+  column-gap: $column-gap;
+
+  grid-template-columns:
+    [full-start] $gutter-column
+    [content-start] 24px auto 1fr 1fr [content-end]
+    $gutter-column [full-end];
 }
 
 .heading {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-template-columns: subgrid;
 
   background-color: var(--bg-dim);
-  padding: vars.$padding-main vars.$padding-edges;
+  padding: vars.$padding-main 0;
 }
 
 .headingContent {
   display: grid;
-  grid-template-columns: shared.$template-columns;
+  grid-column: content-start / content-end;
+  grid-template-columns: subgrid;
+
   align-items: center;
-  gap: vars.$padding-main;
 
   width: 100%;
   max-width: vars.$max-width-main;
@@ -58,10 +82,4 @@
 
 .collapsed .headingDropBtn {
   transform: rotate(180deg);
-}
-
-.palette,
-.paletteColors {
-  display: flex;
-  flex-direction: column;
 }

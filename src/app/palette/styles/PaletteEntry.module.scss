@@ -1,11 +1,11 @@
 @use "@/styles/vars" as vars;
-@use "./shared" as shared;
 
-.color {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: vars.$padding-small vars.$padding-edges;
+.entry {
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-template-columns: subgrid;
+
+  padding: vars.$padding-small 0;
 
   background-color: var(--bg0);
 
@@ -22,9 +22,9 @@
 
 .content {
   display: grid;
-  grid-template-columns: shared.$template-columns;
+  grid-column: content-start / content-end;
+  grid-template-columns: subgrid;
   align-items: center;
-  gap: vars.$padding-main;
 
   width: 100%;
   max-width: vars.$max-width-main;

@@ -11,7 +11,7 @@ export default function PaletteEntry({ color }: PaletteEntryProps) {
   const decorations = true; // TODO: Add a toggle
 
   return (
-    <div className={s.color}>
+    <div className={s.entry}>
       <div className={s.content}>
         <div
           className={s.swatch}
