@@ -1,18 +1,20 @@
 @use "@/styles/vars" as vars;
 
+$swatch-size: 24px;
+
 .entry {
   display: grid;
   grid-column: full-start / full-end;
   grid-template-columns: subgrid;
 
-  padding: vars.$padding-small 0;
+  padding: vars.$padding-small vars.$padding-edges;
 
-  background-color: var(--bg0);
+  background-color: var(--bg1);
 
   @include vars.transition-main;
 
   &:nth-child(2n) {
-    background-color: var(--bg1);
+    background-color: var(--bg0);
   }
 
   &:hover {
@@ -31,8 +33,9 @@
 }
 
 .swatch {
-  width: 24px;
-  height: 24px;
+  width: $swatch-size;
+  height: $swatch-size;
+  flex: 0 0 $swatch-size;
   border-radius: 50%;
 }
 
@@ -40,9 +43,46 @@
   font-weight: 600;
 }
 
+.copyButtonContainer {
+  display: flex;
+  gap: vars.$padding-small;
+  align-items: center;
+  justify-self: end;
+}
+
+.copyButtonLabel {
+  display: none;
+  color: var(--grey1);
+  font-family: var(--font-mono);
+}
+
 .copyButton {
   display: flex;
   align-items: center;
+  flex-grow: 1;
   gap: vars.$padding-main;
-  justify-self: end;
+}
+
+@media (max-width: vars.$breakpoint-small) {
+  $content-gap-size: vars.$padding-main;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $content-gap-size;
+  }
+
+  .title {
+    width: calc(100% - $swatch-size - $content-gap-size)
+  }
+
+  .copyButtonLabel {
+    display: unset;
+  }
+}
+
+@media (max-width: vars.$breakpoint-xsmall) {
+  .copyButtonContainer {
+    width: 100%;
+  }
 }

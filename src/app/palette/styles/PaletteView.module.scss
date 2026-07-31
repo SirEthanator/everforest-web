@@ -37,7 +37,7 @@
   grid-template-columns: subgrid;
 
   background-color: var(--bg-dim);
-  padding: vars.$padding-main 0;
+  padding: vars.$padding-main vars.$padding-edges;
 }
 
 .headingContent {
@@ -82,4 +82,10 @@
 
 .collapsed .headingDropBtn {
   transform: rotate(180deg);
+}
+
+@media (max-width: vars.$breakpoint-small) {
+  .columnHeading {
+    display: none;
+  }
 }

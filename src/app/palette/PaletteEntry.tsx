@@ -18,8 +18,8 @@ export default function PaletteEntry({ color }: PaletteEntryProps) {
           style={{ backgroundColor: `${color.hexString(true)}` }}
         />
         <h5 className={s.title}>{color.title}</h5>
-        <CopyButton text={color.rgbString(decorations)} />
-        <CopyButton text={color.hexString(decorations)} />
+        <CopyButton text={color.rgbString(decorations)} label="RGB" />
+        <CopyButton text={color.hexString(decorations)} label="Hex" />
       </div>
     </div>
   );
@@ -39,7 +39,12 @@ const copyButtonColorMap: Record<CopyButtonState, string> = {
   fail: "var(--red)"
 } as const;
 
-function CopyButton({ text }: { text: string }) {
+type CopyButtonProps = {
+  text: string;
+  label: string;
+};
+
+function CopyButton({ text, label }: CopyButtonProps) {
   const [buttonState, setButtonState] = useState<CopyButtonState>("idle");
   const [stateTimeout, setStateTimeout] = useState<NodeJS.Timeout | null>(null);
 
@@ -47,32 +52,35 @@ function CopyButton({ text }: { text: string }) {
   const color = copyButtonColorMap[buttonState];
 
   return (
-    <button
-      className={s.copyButton}
-      type="button"
-      style={{ color }}
-      onClick={async () => {
-        try {
-          await navigator.clipboard.writeText(text);
-          setButtonState("success");
-        } catch {
-          setButtonState("fail");
-        }
+    <div className={s.copyButtonContainer}>
+      <p className={s.copyButtonLabel}>{label}:</p>
+      <button
+        className={s.copyButton}
+        type="button"
+        style={{ color }}
+        onClick={async () => {
+          try {
+            await navigator.clipboard.writeText(text);
+            setButtonState("success");
+          } catch {
+            setButtonState("fail");
+          }
 
-        if (stateTimeout) {
-          clearTimeout(stateTimeout);
-        }
+          if (stateTimeout) {
+            clearTimeout(stateTimeout);
+          }
 
-        setStateTimeout(
-          setTimeout(() => {
-            setButtonState("idle");
-            setStateTimeout(null);
-          }, 2000)
-        );
-      }}
-    >
-      <Icon />
-      {text}
-    </button>
+          setStateTimeout(
+            setTimeout(() => {
+              setButtonState("idle");
+              setStateTimeout(null);
+            }, 2000)
+          );
+        }}
+      >
+        <Icon />
+        {text}
+      </button>
+    </div>
   );
 }
