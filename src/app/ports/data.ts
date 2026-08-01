@@ -4,7 +4,7 @@ import portsJson from "@/data/ports.json";
 import { type Port, type PortCategory, portSchema } from "@/data/types/ports";
 
 export const categoryIconMap: Record<PortCategory, React.ComponentType> = {
-  None: Tabler.IconCube,
+  Miscellaneous: Tabler.IconCube,
   IDEs: Tabler.IconCode,
   Editors: Tabler.IconPencil,
   "Terminal Emulators": Tabler.IconTerminal2,

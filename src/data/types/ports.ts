@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const portCategory = z.enum([
-  "None",
+  "Miscellaneous",
   "IDEs",
   "Editors",
   "Terminal Emulators",

@@ -1,7 +1,7 @@
 [
   {
     "title": "NixOS",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@fwinter",
     "authorUrl": "https://codeberg.org/fwinter",
     "url": "https://codeberg.org/fwinter/everforest-nix"
@@ -260,154 +260,154 @@
   },
   {
     "title": "Alfred",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@mhanberg",
     "authorUrl": "https://github.com/mhanberg",
     "url": "https://github.com/mhanberg/everforest-alfred"
   },
   {
     "title": "bat",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@VasylRomanets",
     "authorUrl": "https://github.com/VasylRomanets",
     "url": "https://github.com/VasylRomanets/everforest-bat"
   },
   {
     "title": "Calibre",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@morph626",
     "authorUrl": "https://github.com/morph626",
     "url": "https://gist.github.com/morph626/76dbe01a7e245ca6e6d67c5ca76bf953"
   },
   {
     "title": "colorls",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@talwat",
     "authorUrl": "https://github.com/talwat",
     "url": "https://github.com/talwat/dotfiles/blob/main/macOS/everforest/.config/colorls/dark_colors.yaml"
   },
   {
     "title": "ComfyUI",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@ilonis",
     "authorUrl": "https://github.com/ilonis",
     "url": "https://github.com/Ilonis/everforest-ComfyUI"
   },
   {
     "title": "Cursors",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@talwat",
     "authorUrl": "https://github.com/talwat",
     "url": "https://github.com/talwat/everforest-cursors"
   },
   {
     "title": "dipc",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@doprz",
     "authorUrl": "https://github.com/doprz",
     "url": "https://github.com/doprz/dipc"
   },
   {
     "title": "Gitea",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@sainnhe",
     "authorUrl": "https://git.sainnhe.dev/sainnhe",
     "url": "https://git.sainnhe.dev/sainnhe/gitea-themes"
   },
   {
     "title": "Insomnia",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@talwat",
     "authorUrl": "https://github.com/talwat",
     "url": "https://github.com/talwat/insomnia-plugin-everforest-theme"
   },
   {
     "title": "GTK",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@Fausto-Korpsvart",
     "authorUrl": "https://github.com/Fausto-Korpsvart",
     "url": "https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme"
   },
   {
     "title": "KDE",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@Serge2702",
     "authorUrl": "https://github.com/Serge2702",
     "url": "https://github.com/Serge2702/KDE-Everforest.git"
   },
   {
     "title": "Obsidian",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@kepano",
     "authorUrl": "https://github.com/kepano",
     "url": "https://github.com/kepano/obsidian-minimal"
   },
   {
     "title": "Redlib/Libreddit",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@cozy-isaac",
     "authorUrl": "https://github.com/cozy-isaac",
     "url": "https://github.com/cozy-isaac/searxng-everforest"
   },
   {
     "title": "SearXNG",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@cozy-isaac",
     "authorUrl": "https://github.com/cozy-isaac",
     "url": "https://github.com/cozy-isaac/searxng-everforest"
   },
   {
     "title": "Shiki.js",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@serdonke",
     "authorUrl": "https://github.com/serdonke",
     "url": "https://shiki.style"
   },
   {
     "title": "Slack",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@itendtostare",
     "authorUrl": "https://github.com/itendtostare",
     "url": "https://github.com/itendtostare/everforest-slack"
   },
   {
     "title": "tmux",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@talwat",
     "authorUrl": "https://github.com/talwat",
     "url": "https://github.com/talwat/dotfiles/blob/main/macOS/everforest/.tmux.conf"
   },
   {
     "title": "tmux-plugin",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@TanglingTreats",
     "authorUrl": "https://github.com/TanglingTreats",
     "url": "https://github.com/TanglingTreats/tmux-everforest"
   },
   {
     "title": "Typora",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@YuxBao",
     "authorUrl": "https://github.com/YuxBao",
     "url": "https://github.com/YuxBao/everforest-typora"
   },
   {
     "title": "Xresources",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@jef",
     "authorUrl": "https://github.com/jef",
     "url": "https://github.com/jef/everforest-xresources"
   },
   {
     "title": "Zelij",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@n1yn",
     "authorUrl": "https://github.com/n1yn",
     "url": "https://github.com/n1yn/everforest-dark-zellij"
   },
   {
     "title": "Zsh",
-    "category": "None",
+    "category": "Miscellaneous",
     "author": "@sainnhe",
     "authorUrl": "https://github.com/sainnhe",
     "url": "https://github.com/sainnhe/dotfiles/tree/master/.zsh-theme"
