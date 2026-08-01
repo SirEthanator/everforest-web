@@ -1,12 +1,9 @@
 import { IconExternalLink, IconSearch } from "@tabler/icons-react";
 import Link from "next/link";
 import type { Port } from "@/data/types/ports";
-import { categoryIconMap, ports as data } from "./data";
+import { categoryIconMap } from "./data";
+import { searchPorts } from "./fuzzy-search";
 import s from "./styles/Ports.module.scss";
-
-const sorted_data = data.sort((a: Port, b: Port) =>
-  a.title.localeCompare(b.title)
-);
 
 function Item({ title, url, category, author, authorUrl }: Port) {
   const Icon = categoryIconMap[category];
@@ -39,17 +36,12 @@ export type PortListProps = {
 };
 
 export default function PortList({ query }: PortListProps) {
-  const filtered_data =
-    query === ""
-      ? sorted_data
-      : sorted_data.filter((port) =>
-          port.title.toLowerCase().includes(query.toLowerCase())
-        );
+  const filtered_ports = searchPorts(query);
 
-  if (filtered_data.length > 0) {
+  if (filtered_ports.length > 0) {
     return (
       <div className={s.ports}>
-        {filtered_data.map((item) => (
+        {filtered_ports.map((item) => (
           <Item {...item} key={item.title + item.author} />
         ))}
       </div>
