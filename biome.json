@@ -62,6 +62,8 @@
       "src/**/*.jsx",
       "src/**/*.mjs",
       "src/**/*.cjs",
+      "scripts/**/*.ts",
+      "scripts/**/*.js",
       "next.config.ts"
     ]
   }

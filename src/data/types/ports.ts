@@ -10,11 +10,13 @@ export const portCategory = z.enum([
 ]);
 export type PortCategory = z.infer<typeof portCategory>;
 
-export const portSchema = z.object({
-  title: z.string().nonempty(),
-  author: z.string().nonempty(),
-  authorUrl: z.httpUrl(),
-  category: portCategory,
-  url: z.httpUrl()
-});
+export const portSchema = z
+  .object({
+    title: z.string().nonempty(),
+    author: z.string().nonempty(),
+    authorUrl: z.httpUrl(),
+    category: portCategory,
+    url: z.httpUrl()
+  })
+  .strict();
 export type Port = z.infer<typeof portSchema>;

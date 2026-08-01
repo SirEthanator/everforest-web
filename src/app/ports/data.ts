@@ -1,7 +1,6 @@
 import * as Tabler from "@tabler/icons-react";
-import { z } from "zod";
 import portsJson from "@/data/ports.json";
-import { type Port, type PortCategory, portSchema } from "@/data/types/ports";
+import type { Port, PortCategory } from "@/data/types/ports";
 
 export const categoryIconMap: Record<PortCategory, React.ComponentType> = {
   Miscellaneous: Tabler.IconCube,
@@ -12,4 +11,5 @@ export const categoryIconMap: Record<PortCategory, React.ComponentType> = {
   "Website Themes": Tabler.IconAppWindow
 } as const;
 
-export const ports: Array<Port> = z.array(portSchema).parse(portsJson);
+// Validated by prebuild script
+export const ports: Array<Port> = portsJson as unknown as Array<Port>;
