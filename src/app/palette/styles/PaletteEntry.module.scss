@@ -59,8 +59,8 @@ $swatch-size: 24px;
 .copyButton {
   display: flex;
   align-items: center;
+  gap: vars.$padding-small;
   flex-grow: 1;
-  gap: vars.$padding-main;
 }
 
 @media (max-width: vars.$breakpoint-small) {

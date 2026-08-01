@@ -75,10 +75,10 @@
 }
 
 .openBtn {
-  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: vars.$padding-main;
+  gap: vars.$padding-small;
+  margin-left: auto;
 }
 
 .noResults {
