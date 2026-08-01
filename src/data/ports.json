@@ -70,11 +70,11 @@
     "url": "https://replit.com/theme/@talwat321/everforest"
   },
   {
-    "title": "Textmate/Sublime Text",
+    "title": "Sublime Text",
     "category": "Editors",
-    "author": "@mhanberg",
-    "authorUrl": "https://github.com/mhanberg",
-    "url": "https://github.com/mhanberg/everforest-textmate"
+    "author": "@morph626",
+    "authorUrl": "https://github.com/morph626",
+    "url": "https://github.com/morph626/everforest-sublime-md"
   },
   {
     "title": "Visual Studio Code",
@@ -191,9 +191,9 @@
   {
     "title": "Windows Terminal",
     "category": "Terminal Emulators",
-    "author": "@suppayami",
-    "authorUrl": "https://github.com/suppayami",
-    "url": "https://gist.github.com/suppayami/7d427d116b97564d1c565a7aed092d08"
+    "author": "@BinaryAlien",
+    "authorUrl": "https://github.com/BinaryAlien",
+    "url": "https://gist.github.com/BinaryAlien/26f09f91200cba88b7230e3a6d0f68bb"
   },
   {
     "title": "Xfce4-Terminal",
