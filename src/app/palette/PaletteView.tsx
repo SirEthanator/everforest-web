@@ -10,6 +10,7 @@ export type PaletteViewProps = {
   colors: Palette;
   collapsed: boolean;
   setCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
+  decorationsEnabled: boolean;
 };
 
 export default function PaletteView({
@@ -17,7 +18,8 @@ export default function PaletteView({
   contrast,
   colors,
   collapsed,
-  setCollapsed
+  setCollapsed,
+  decorationsEnabled
 }: PaletteViewProps) {
   return (
     <div className={cn(s.palette, collapsed && s.collapsed)}>
@@ -38,7 +40,13 @@ export default function PaletteView({
 
       {!collapsed &&
         [...colors.common, ...colors[contrast]].map((color) => {
-          return <PaletteEntry key={color.title} color={color} />;
+          return (
+            <PaletteEntry
+              key={color.title}
+              color={color}
+              decorationsEnabled={decorationsEnabled}
+            />
+          );
         })}
     </div>
   );

@@ -5,11 +5,13 @@ import s from "./styles/PaletteEntry.module.scss";
 
 export type PaletteEntryProps = {
   color: Color;
+  decorationsEnabled: boolean;
 };
 
-export default function PaletteEntry({ color }: PaletteEntryProps) {
-  const decorations = true; // TODO: Add a toggle
-
+export default function PaletteEntry({
+  color,
+  decorationsEnabled
+}: PaletteEntryProps) {
   return (
     <div className={s.entry}>
       <div className={s.content}>
@@ -18,8 +20,8 @@ export default function PaletteEntry({ color }: PaletteEntryProps) {
           style={{ backgroundColor: `${color.hexString(true)}` }}
         />
         <h5 className={s.title}>{color.title}</h5>
-        <CopyButton text={color.rgbString(decorations)} label="RGB" />
-        <CopyButton text={color.hexString(decorations)} label="Hex" />
+        <CopyButton text={color.rgbString(decorationsEnabled)} label="RGB" />
+        <CopyButton text={color.hexString(decorationsEnabled)} label="Hex" />
       </div>
     </div>
   );

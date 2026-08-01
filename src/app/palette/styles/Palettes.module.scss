@@ -10,7 +10,7 @@
   overflow: clip visible;
 }
 
-.contrastPicker {
+.controlBar {
   position: sticky;
   top: navvars.$height;
   z-index: 5;
@@ -21,30 +21,53 @@
   border-bottom: vars.$divider-width solid var(--bg2);
 }
 
-.contrastPickerContent {
-  display: flex;
-  justify-content: center;
+.controlBarContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
   width: 100%;
   max-width: vars.$max-width-main;
 }
 
-.contrastBtn {
-  width: 100%;
+.contrastButtonRow {
+  grid-column: 1;
+  display: flex;
+}
+
+.contrastButton {
+  flex: 1 0 0;
+
   text-align: center;
+
+  padding: vars.$padding-main vars.$padding-large;
 
   font-weight: 600;
   font-family: var(--font-main);
+
+  border-right: vars.$divider-width solid var(--bg2);
 
   &.active {
     color: var(--bg-dim);
     background-color: var(--green);
   }
-
-  &:not(:last-child) {
-    border-right: vars.$divider-width solid var(--bg2);
-  }
 }
 
+.decorationsButton {
+  grid-column: 3;
+
+  display: flex;
+  align-items: center;
+  gap: vars.$padding-small;
+
+  font-family: var(--font-main);
+
+  color: var(--grey1);
+
+  border-left: vars.$divider-width solid var(--bg2);
+}
+
+.decorationsButton.enabled {
+  color: var(--green);
+}
 
 .paletteCarousel {
   position: relative;
@@ -58,4 +81,22 @@
 
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: vars.$breakpoint-xsmall) {
+  .controlBarContent {
+    grid-template-columns: 100%;
+  }
+
+  .decorationsButton {
+    grid-column: unset;
+    border: none;
+    border-top: vars.$divider-width solid var(--bg2);
+  }
+
+  .contrastButton {
+    &:last-child {
+      border-right: none;
+    }
+  }
 }
