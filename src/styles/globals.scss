@@ -29,6 +29,10 @@
   --grey2: #9DA9A0;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   height: 100%;
   width: 100%;
