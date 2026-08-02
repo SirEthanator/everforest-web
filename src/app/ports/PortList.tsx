@@ -50,7 +50,7 @@ export default function PortList({ query }: PortListProps) {
     return (
       <div className={s.noResults}>
         <IconSearch className={s.noResultsIcon} />
-        <h3 className={s.noResultsText}>No results found for "{query}"</h3>
+        <h3 className={s.noResultsText}>No results for "{query.trim()}"</h3>
       </div>
     );
   }

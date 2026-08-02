@@ -10,7 +10,7 @@ export default function Content() {
 
   return (
     <div className={s.root}>
-      <SearchBar setQuery={setSearchQuery} />
+      <SearchBar query={searchQuery} setQuery={setSearchQuery} />
       <PortList query={searchQuery} />
     </div>
   );
