@@ -12,7 +12,16 @@ export default function SearchBar({ query, setQuery }: SearchBarProps) {
 
   return (
     <div className={s.root}>
-      <div className={s.content}>
+      <form
+        className={s.content}
+        onSubmit={(e) => {
+          e.preventDefault();
+          const isTouchScreen = window.matchMedia("(pointer: coarse)").matches;
+          if (isTouchScreen) {
+            inputRef.current?.blur();
+          }
+        }}
+      >
         <IconSearch className={s.icon} />
         <input
           id="ports-search"
@@ -31,15 +40,13 @@ export default function SearchBar({ query, setQuery }: SearchBarProps) {
             aria-label="Clear search"
             onClick={() => {
               setQuery("");
-              if (inputRef.current) {
-                inputRef.current.focus();
-              }
+              inputRef.current?.focus();
             }}
           >
             <IconX />
           </button>
         )}
-      </div>
+      </form>
     </div>
   );
 }

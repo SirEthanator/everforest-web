@@ -4,6 +4,7 @@ import { IconMenu2, IconX } from "@tabler/icons-react";
 import Link from "next/link";
 import { useState } from "react";
 import s from "./styles/NavBar.module.scss";
+import { cn } from "@/utils/class-name";
 
 export type NavPage = {
   id: "home" | "palette" | "ports";
@@ -40,21 +41,15 @@ export default function NavBar({ activePage, hideHeading }: NavBarProps) {
   return (
     <div className={s.navBar}>
       <div className={s.content}>
-        <Link
-          className={`${s.headingWrap} ${hideHeading ? s.hidden : ""}`}
-          href="/"
-        >
+        <Link className={cn(s.headingWrap, hideHeading && s.hidden)} href="/">
           <h3 className={`${s.heading} siteTitle`}>EVERFOREST</h3>
         </Link>
 
-        <div className={`${s.linkList} ${menuOpen ? s.menuOpen : ""}`}>
+        <div className={cn(s.linkList, menuOpen && s.menuOpen)}>
           {pages.map((page) => {
-            const classes = [s.link];
-            if (activePage === page.id) classes.push(s.active);
-
             return (
               <Link key={page.id} href={page.url} className={s.linkWrap}>
-                <div className={classes.join(" ")}>
+                <div className={cn(s.link, activePage === page.id && s.active)}>
                   <h4>{page.title}</h4>
                 </div>
               </Link>
