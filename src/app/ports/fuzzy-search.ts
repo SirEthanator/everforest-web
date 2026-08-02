@@ -23,5 +23,5 @@ export function searchPorts(query: string): Array<Port> {
     return alphabetically_sorted_ports;
   }
 
-  return fuse.search(query).map((result) => result.item);
+  return fuse.search(query.trim()).map((result) => result.item);
 }
