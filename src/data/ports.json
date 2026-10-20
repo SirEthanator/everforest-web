@@ -411,5 +411,12 @@
     "author": "@sainnhe",
     "authorUrl": "https://github.com/sainnhe",
     "url": "https://github.com/sainnhe/dotfiles/tree/master/.zsh-theme"
+  },
+  {
+    "title": "DeepSeek Harness",
+    "category": "Miscellaneous",
+    "author": "@FormalistBlue",
+    "authorUrl": "https://github.com/FormalistBlue",
+    "url": "https://github.com/FormalistBlue/dsh-everforest"
   }
 ]
