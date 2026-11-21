@@ -3,8 +3,8 @@
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import Link from "next/link";
 import { useState } from "react";
-import s from "./styles/NavBar.module.scss";
 import { cn } from "@/utils/class-name";
+import s from "./styles/NavBar.module.scss";
 
 export type NavPage = {
   id: "home" | "palette" | "ports";
