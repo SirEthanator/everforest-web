@@ -51,7 +51,13 @@ p {
   font-size: vars.$fsize-main;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-family: var(--font-main);
 }
@@ -85,7 +91,9 @@ h5 {
   height: 1em;
 }
 
-input, button, .linkButton {
+input,
+button,
+.linkButton {
   all: unset;
   color: var(--fg);
   font-family: var(--font-main);
@@ -95,7 +103,8 @@ input, button, .linkButton {
   padding: vars.$padding-main;
 }
 
-button, .linkButton {
+button,
+.linkButton {
   cursor: pointer;
   font-family: var(--font-mono);
   white-space: nowrap;
@@ -119,12 +128,15 @@ a {
   color: var(--blue);
 
   &:visited {
-    color: var(--purple)
+    color: var(--purple);
   }
 }
 
 .siteTitle {
   font-weight: 1000;
-  font-variation-settings: "wdth" 140, "XTRA" 520, "slnt" -8;
+  font-variation-settings:
+    "wdth" 140,
+    "XTRA" 520,
+    "slnt" -8;
   color: var(--green);
 }

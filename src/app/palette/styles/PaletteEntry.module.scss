@@ -73,7 +73,7 @@ $swatch-size: 24px;
   }
 
   .title {
-    width: calc(100% - $swatch-size - $content-gap-size)
+    width: calc(100% - $swatch-size - $content-gap-size);
   }
 
   .copyButtonLabel {

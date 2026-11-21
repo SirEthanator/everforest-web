@@ -5,7 +5,12 @@ $bg-width: 75%;
 
 .header {
   display: flex;
-  background: linear-gradient(90deg, var(--bg-green) 0%, var(--bg-green) $bg-width - 20%, var(--bg-dim) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--bg-green) 0%,
+    var(--bg-green) $bg-width - 20%,
+    var(--bg-dim) 100%
+  );
   border-bottom: vars.$divider-width solid var(--bg2);
 }
 
@@ -18,7 +23,12 @@ $bg-width: 75%;
   justify-content: center;
 
   background-color: var(--green);
-  clip-path: polygon(0 0, $bg-width 0, calc($bg-width - $cutoff-width) 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    $bg-width 0,
+    calc($bg-width - $cutoff-width) 100%,
+    0 100%
+  );
 
   padding: $padding vars.$padding-edges;
 }
@@ -31,7 +41,9 @@ $bg-width: 75%;
 
 .title {
   font-weight: 1000;
-  font-variation-settings: "wdth" 130, "XTRA" 600;
+  font-variation-settings:
+    "wdth" 130,
+    "XTRA" 600;
   color: var(--bg-dim);
 }
 

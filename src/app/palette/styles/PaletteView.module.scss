@@ -16,10 +16,7 @@
   // Then we just give it a minimum of the margin
   // used when not at max width.
   $gutter-column: calc(
-    max(
-      $min-gutter,
-      calc((100% - vars.$max-width-main) / 2)
-    ) - $column-gap // Subtract gap to negate extra space from column-gap
+    max($min-gutter, calc((100% - vars.$max-width-main) / 2)) - $column-gap // Subtract gap to negate extra space from column-gap
   );
 
   display: grid;

@@ -29,25 +29,6 @@
   text-decoration: none;
 }
 
-.card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-
-  color: var(--fg);
-  background-color: var(--bg-dim);
-
-  @include vars.transition-main;
-
-  &:hover {
-    background-color: var(--bg-green);
-
-    & .cardIcon {
-      background-color: var(--bg-dim);
-    }
-  }
-}
-
 .cardIcon {
   $clip-width: 15px;
 
@@ -61,9 +42,30 @@
   background-color: var(--bg0);
   padding: vars.$padding-med-small;
 
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - $clip-width), calc(100% - $clip-width) 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - $clip-width),
+    calc(100% - $clip-width) 100%,
+    0 100%
+  );
 
   @include vars.transition-main;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--fg);
+  background-color: var(--bg-dim);
+
+  @include vars.transition-main;
+
+  &:hover {
+    background-color: var(--bg-green);
+  }
 }
 
 .cardText {
