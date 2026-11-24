@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Roboto_Flex, Roboto_Mono } from "next/font/google";
 import "@/styles/globals.scss";
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     "color palette",
     "colour palette"
   ],
-  authors: [{ name: "Ethan M.", url: "https://github.com/SirEthanator" }],
+  authors: [{ name: "Ethan McRae", url: "https://github.com/SirEthanator" }],
   verification: { google: "FjIB76Sma1-os92AEkFdtb5Hl5Sf20bXW8BfH2WzGVQ" }
 };
 
@@ -65,6 +66,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${fontMain.variable} ${fontMono.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
