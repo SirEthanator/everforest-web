@@ -311,8 +311,8 @@
     "title": "Gitea",
     "category": "Miscellaneous",
     "author": "@sainnhe",
-    "authorUrl": "https://git.sainnhe.dev/sainnhe",
-    "url": "https://git.sainnhe.dev/sainnhe/gitea-themes"
+    "authorUrl": "https://github.com/sainnhe/gitea-themes",
+    "url": "https://github.com/sainnhe"
   },
   {
     "title": "Insomnia",
@@ -362,13 +362,6 @@
     "author": "@serdonke",
     "authorUrl": "https://github.com/serdonke",
     "url": "https://shiki.style"
-  },
-  {
-    "title": "Slack",
-    "category": "Miscellaneous",
-    "author": "@itendtostare",
-    "authorUrl": "https://github.com/itendtostare",
-    "url": "https://github.com/itendtostare/everforest-slack"
   },
   {
     "title": "tmux",
